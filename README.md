@@ -34,3 +34,5 @@ Updated:
 - [云南攻略](https://al80402.github.io/laiyonghong-travel-guides/yunnan-7day.html)
 
 - 更新时间: 2026-08-04 12:29:18
+
+- 图片路径修复: 2026-08-04 12:36:52
