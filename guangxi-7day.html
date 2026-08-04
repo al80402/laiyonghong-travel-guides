@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>广西7日旅行攻略</title>
+<meta property="og:title" content="广西7日旅行攻略 | 桂林×阳朔×柳州×德天亲子之旅">
+<meta property="og:description" content="2人7日行程：桂林→阳朔→龙脊→柳州→德天跨国瀑布，含美食攻略、景点打卡、预算明细（约6000-8200元）">
+<meta property="og:image" content="https://laiyonghong.ddnsto.com/static/guangxi_trip_cover.jpg">
+<meta property="og:url" content="https://laiyonghong.ddnsto.com/static/guangxi-7day.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<style>
+  :root {
+    --sky: #87CEEB;
+    --grass: #7CB342;
+    --warm: #FFD54F;
+    --peach: #FFAB91;
+    --pink: #F48FB1;
+    --brown: #8D6E63;
+    --cream: #FFF8E1;
+    --dark: #4E342E;
+    --red: #E53935;
+    --green-dark: #558B2F;
+    --title-dark: #0D47A1;
+    --title-stroke: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  /* 描边字体 */
+  .stroke-text {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 2px var(--dark);
+    color: white;
+    text-shadow: 3px 3px 0px var(--dark);
+  }
+
+  .stroke-text-fill {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 1.5px var(--dark);
+    color: var(--warm);
+    text-shadow: 2px 2px 0px var(--dark);
+  }
+
+  /* 海报头部 */
+  .poster-header {
+    background: linear-gradient(180deg, #87CEEB 0%, #B2EBF2 40%, #A5D6A7 70%, #7CB342 100%);
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  /* 宫崎骏风格云朵 */
+  .cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  .cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+  }
+  .cloud-1 { width: 120px; height: 50px; top: 60px; left: 10%; animation: float 8s ease-in-out infinite; }
+  .cloud-1::before { width: 60px; height: 60px; top: -30px; left: 20px; }
+  .cloud-1::after { width: 80px; height: 50px; top: -20px; left: 50px; }
+  .cloud-2 { width: 160px; height: 60px; top: 100px; right: 15%; animation: float 10s ease-in-out infinite reverse; }
+  .cloud-2::before { width: 80px; height: 80px; top: -40px; left: 30px; }
+  .cloud-2::after { width: 100px; height: 60px; top: -25px; left: 60px; }
+  .cloud-3 { width: 100px; height: 40px; top: 40px; left: 40%; animation: float 6s ease-in-out infinite; }
+  .cloud-3::before { width: 50px; height: 50px; top: -25px; left: 15px; }
+  .cloud-3::after { width: 65px; height: 40px; top: -18px; left: 40px; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* 太阳 */
+  .sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #FFD54F, #FFB300);
+    border-radius: 50%;
+    top: 30px;
+    right: 10%;
+    box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300;
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300; }
+    50% { box-shadow: 0 0 80px #FFD54F, 0 0 140px #FFB300; }
+  }
+
+  /* 山丘 */
+  .hills {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+  }
+  .hill {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .hill-1 { width: 400px; height: 180px; background: #689F38; left: -50px; }
+  .hill-2 { width: 500px; height: 200px; background: #7CB342; left: 200px; }
+  .hill-3 { width: 450px; height: 160px; background: #8BC34A; right: -50px; }
+  .hill-4 { width: 300px; height: 120px; background: #9CCC65; left: 50%; transform: translateX(-50%); }
+
+  /* 竹子装饰 */
+  .bamboo {
+    position: absolute;
+    bottom: 0;
+    width: 8px;
+    background: linear-gradient(90deg, #558B2F, #7CB342);
+    border-radius: 4px;
+  }
+  .bamboo::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #33691E;
+    top: 30%;
+    left: 0;
+  }
+  .bamboo-1 { left: 5%; height: 180px; }
+  .bamboo-2 { left: 8%; height: 140px; }
+  .bamboo-3 { right: 5%; height: 200px; }
+  .bamboo-4 { right: 8%; height: 160px; }
+  .bamboo-leaf {
+    position: absolute;
+    width: 30px;
+    height: 12px;
+    background: #7CB342;
+    border-radius: 50% 50% 0 0;
+    top: -8px;
+    left: -11px;
+  }
+
+  /* 小房子 */
+  .house {
+    position: absolute;
+    bottom: 80px;
+    left: 15%;
+  }
+  .house-body {
+    width: 60px;
+    height: 45px;
+    background: #FFF9C4;
+    border: 3px solid var(--dark);
+    position: relative;
+  }
+  .house-roof {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 35px solid var(--red);
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    border: 3px solid var(--dark);
+    border-top: none;
+  }
+  .house-door {
+    width: 18px;
+    height: 28px;
+    background: var(--brown);
+    border: 2px solid var(--dark);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px 2px 0 0;
+  }
+  .house-window {
+    width: 14px;
+    height: 14px;
+    background: #B3E5FC;
+    border: 2px solid var(--dark);
+    position: absolute;
+    top: 8px;
+    border-radius: 50%;
+  }
+  .house-window.left { left: 6px; }
+  .house-window.right { right: 6px; }
+
+  /* 小人物 */
+  .person {
+    position: absolute;
+    bottom: 60px;
+  }
+  .person-body {
+    width: 20px;
+    height: 25px;
+    background: var(--pink);
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+  }
+  .person-head {
+    width: 18px;
+    height: 18px;
+    background: #FFE0B2;
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+    margin: 0 auto 2px;
+  }
+  .person-1 { left: 25%; }
+  .person-2 { left: 28%; }
+  .person-3 { right: 20%; }
+
+  /* 花朵 */
+  .flower {
+    position: absolute;
+    bottom: 30px;
+    font-size: 24px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+  .flower:nth-child(1) { left: 5%; animation-delay: 0s; }
+  .flower:nth-child(2) { left: 12%; animation-delay: 0.5s; }
+  .flower:nth-child(3) { right: 8%; animation-delay: 1s; }
+  .flower:nth-child(4) { right: 15%; animation-delay: 1.5s; }
+  .flower:nth-child(5) { left: 35%; animation-delay: 0.3s; }
+
+  /* 蝴蝶 */
+  .butterfly {
+    position: absolute;
+    font-size: 20px;
+    animation: fly 12s linear infinite;
+  }
+  @keyframes fly {
+    0% { top: 200px; left: -50px; }
+    25% { top: 150px; }
+    50% { top: 180px; left: 50%; }
+    75% { top: 130px; }
+    100% { top: 200px; left: 110%; }
+  }
+
+  /* 标题区域 */
+  .title-area {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title-area::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10%;
+    right: -10%;
+    bottom: -20px;
+    background: rgba(13, 71, 161, 0.55);
+    border-radius: 24px;
+    z-index: -1;
+    backdrop-filter: blur(2px);
+  }
+  .title-area h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 88px;
+    color: var(--dark);
+    text-shadow:
+      -3px -3px 0 #FFF, 3px -3px 0 #FFF,
+      -3px 3px 0 #FFF, 3px 3px 0 #FFF,
+      -3px 0 0 #FFF, 3px 0 0 #FFF,
+      0 -3px 0 #FFF, 0 3px 0 #FFF,
+      4px 4px 0px rgba(0,0,0,0.2);
+    letter-spacing: 10px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .title-area .subtitle {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: var(--dark);
+    text-shadow:
+      -2px -2px 0 #FFF, 2px -2px 0 #FFF,
+      -2px 2px 0 #FFF, 2px 2px 0 #FFF,
+      -2px 0 0 #FFF, 2px 0 0 #FFF,
+      0 -2px 0 #FFF, 0 2px 0 #FFF,
+      3px 3px 0px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    letter-spacing: 6px;
+  }
+  .title-area .tagline {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    background: rgba(0,0,0,0.45);
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+  }
+
+  /* 美食emoji装饰 */
+  .food-deco {
+    position: absolute;
+    font-size: 40px;
+    z-index: 5;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+  }
+  .food-deco:nth-child(1) { top: 120px; left: 8%; animation-delay: 0s; }
+  .food-deco:nth-child(2) { top: 160px; right: 8%; animation-delay: 0.3s; }
+  .food-deco:nth-child(3) { top: 280px; left: 5%; animation-delay: 0.6s; }
+  .food-deco:nth-child(4) { top: 300px; right: 5%; animation-delay: 0.9s; }
+
+  /* 主内容 */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  /* 日程卡片 */
+  .day-card {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px var(--dark);
+    transition: transform 0.3s;
+  }
+  .day-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px var(--dark);
+  }
+
+  /* 卡片头部 */
+  .day-header {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 3px solid var(--dark);
+  }
+  .day-num {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 48px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    min-width: 80px;
+    text-align: center;
+  }
+  .day-date {
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.2);
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-top: 4px;
+  }
+  .day-info h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 24px;
+    color: var(--dark);
+    letter-spacing: 2px;
+  }
+  .day-info .route {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* 卡片内容 */
+  .day-body {
+    padding: 25px;
+  }
+  .section-title {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .icon {
+    font-size: 22px;
+  }
+
+  /* 景点标签 */
+  .spot-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .spot-tag {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* 美食标签 */
+  .food-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .food-tag {
+    background: #FFF3E0;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* Tips */
+  .tip-box {
+    background: #E8F5E9;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .tip-box .tip-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  /* 颜色主题 */
+  .theme-guilin .day-header { background: linear-gradient(135deg, #A5D6A7, #81C784); }
+  .theme-yangshuo .day-header { background: linear-gradient(135deg, #80DEEA, #4DD0E1); }
+  .theme-longji .day-header { background: linear-gradient(135deg, #CE93D8, #BA68C8); }
+  .theme-liuzhou .day-header { background: linear-gradient(135deg, #FFAB91, #FF8A65); }
+  .theme-detian .day-header { background: linear-gradient(135deg, #90CAF9, #64B5F6); }
+  .theme-flight .day-header { background: linear-gradient(135deg, #FFF59D, #FFF176); }
+
+  /* 天气预报 */
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .weather-panel {
+    border-radius: 16px;
+    padding: 18px;
+  }
+  .weather-panel h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .weather-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .weather-panel table th {
+    padding: 6px 4px;
+    text-align: center;
+    border-radius: 8px 0 0 0;
+  }
+  .weather-panel table th:last-child {
+    border-radius: 0 8px 0 0;
+  }
+  .weather-panel table td {
+    padding: 5px 4px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .weather-panel .weather-extra {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .weather-tip {
+    max-width: 900px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.8;
+    border: 1px solid #FFE0B2;
+  }
+  @media (max-width: 600px) {
+    .weather-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .weather-panel table {
+      font-size: 12px;
+    }
+    .weather-panel table th,
+    .weather-panel table td {
+      padding: 4px 2px;
+    }
+    .weather-tip {
+      margin-left: 12px;
+      margin-right: 12px;
+      padding: 12px 14px;
+      font-size: 12px;
+    }
+  }
+
+  /* 信息汇总 */
+  .info-section {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0px var(--dark);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .info-section h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 28px;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .info-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 18px;
+    text-align: center;
+  }
+  .info-card .info-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .info-card h3 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .info-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* 预算 */
+  .budget-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+  }
+  .budget-label {
+    font-size: 13px;
+    width: 60px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .budget-track {
+    flex: 1;
+    height: 16px;
+    background: #E0E0E0;
+    border-radius: 8px;
+    border: 2px solid var(--dark);
+    overflow: hidden;
+  }
+  .budget-fill {
+    height: 100%;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--grass), var(--warm));
+  }
+  .budget-value {
+    font-size: 13px;
+    width: 80px;
+    flex-shrink: 0;
+    font-weight: bold;
+  }
+
+  /* 底部 */
+  .poster-footer {
+    background: linear-gradient(180deg, #7CB342, #558B2F);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .poster-footer h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    margin-bottom: 15px;
+  }
+  .poster-footer p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .footer-flowers {
+    position: absolute;
+    bottom: 10px;
+    font-size: 28px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  .footer-flowers:nth-child(1) { left: 10%; animation-delay: 0s; }
+  .footer-flowers:nth-child(2) { left: 25%; animation-delay: 0.5s; }
+  .footer-flowers:nth-child(3) { left: 40%; animation-delay: 1s; }
+  .footer-flowers:nth-child(4) { right: 40%; animation-delay: 1.5s; }
+  .footer-flowers:nth-child(5) { right: 25%; animation-delay: 0.3s; }
+  .footer-flowers:nth-child(6) { right: 10%; animation-delay: 0.8s; }
+
+  /* 装饰元素 */
+  .deco-line {
+    width: 60px;
+    height: 4px;
+    background: var(--warm);
+    border-radius: 2px;
+    margin: 15px 0;
+    border: 2px solid var(--dark);
+  }
+
+  /* 响应式 */
+  @media (max-width: 600px) {
+    .title-area h1 { font-size: 42px; letter-spacing: 4px; }
+    .title-area .subtitle { font-size: 18px; }
+    .day-num { font-size: 36px; min-width: 60px; }
+    .day-info h2 { font-size: 18px; }
+    .info-grid { grid-template-columns: 1fr; }
+  }
+
+  /* 景点轮播图 */
+  .carousel-wrap {
+    margin-bottom: 18px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid var(--dark);
+    box-shadow: 4px 4px 0px var(--dark);
+  }
+  .carousel-wrap .swiper {
+    width: 100%;
+    height: 160px;
+  }
+  .carousel-wrap .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 22px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-radius: 13px;
+  }
+  .slide-d1a { background: linear-gradient(135deg, #81C784 0%, #388E3C 50%, #2E7D32 100%); }
+  .slide-d1b { background: linear-gradient(135deg, #1565C0 0%, #0D47A1 50%, #01579B 100%); }
+  .slide-d2a { background: linear-gradient(135deg, #4DD0E1 0%, #00838F 50%, #006064 100%); }
+  .slide-d2b { background: linear-gradient(135deg, #A5D6A7 0%, #66BB6A 50%, #43A047 100%); }
+  .slide-d3a { background: linear-gradient(135deg, #C8E6C9 0%, #81C784 50%, #4CAF50 100%); }
+  .slide-d3b { background: linear-gradient(135deg, #CE93D8 0%, #AB47BC 50%, #8E24AA 100%); }
+  .slide-d4a { background: linear-gradient(135deg, #FFB74D 0%, #FF9800 50%, #E65100 100%); }
+  .slide-d4b { background: linear-gradient(135deg, #AED581 0%, #7CB342 50%, #558B2F 100%); }
+  .slide-d5a { background: linear-gradient(135deg, #FF8A65 0%, #E64A19 50%, #BF360C 100%); }
+  .slide-d5b { background: linear-gradient(135deg, #7E57C2 0%, #512DA8 50%, #311B92 100%); }
+  .slide-d6a { background: linear-gradient(135deg, #42A5F5 0%, #1565C0 50%, #0D47A1 100%); }
+  .slide-d6b { background: linear-gradient(135deg, #66BB6A 0%, #2E7D32 50%, #1B5E20 100%); }
+  .carousel-wrap .swiper-slide::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    font-size: 14px;
+    background: rgba(0,0,0,0.4);
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+  .carousel-wrap .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+    border: 2px solid var(--dark);
+  }
+  .carousel-wrap .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--red);
+    border-color: var(--dark);
+  }
+  .carousel-wrap .swiper-button-next,
+  .carousel-wrap .swiper-button-prev {
+    color: white;
+    background: rgba(0,0,0,0.35);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .carousel-wrap .swiper-button-next::after,
+  .carousel-wrap .swiper-button-prev::after {
+    font-size: 14px;
+    font-weight: bold;
+  }
+</style>
+
+<link rel="icon" href="https://laiyonghong.ddnsto.com/static/guangxi_trip_cover.jpg" type="image/jpeg">
+
+<link rel="canonical" href="https://laiyonghong.ddnsto.com/static/guangxi-7day.html">
+
+<!-- WeChat Share Optimization -->
+<meta property="weixin:content:img_path" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body>
+
+<!-- ====== 海报头部 ====== -->
+<header class="poster-header">
+  <!-- 云朵 -->
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+  <!-- 太阳 -->
+  <div class="sun"></div>
+  <!-- 蝴蝶 -->
+  <div class="butterfly">🦋</div>
+  <!-- 美食装饰 -->
+  <div class="food-deco">🎋</div>
+  <div class="food-deco">🐟</div>
+  <div class="food-deco">🍜</div>
+  <div class="food-deco">🌊</div>
+  <!-- 山丘 -->
+  <div class="hills">
+    <div class="hill hill-1"></div>
+    <div class="hill hill-2"></div>
+    <div class="hill hill-3"></div>
+    <div class="hill hill-4"></div>
+  </div>
+  <!-- 竹子 -->
+  <div class="bamboo bamboo-1"><div class="bamboo-leaf"></div></div>
+  <div class="bamboo bamboo-2"><div class="bamboo-leaf"></div></div>
+  <div class="bamboo bamboo-3"><div class="bamboo-leaf"></div></div>
+  <div class="bamboo bamboo-4"><div class="bamboo-leaf"></div></div>
+  <!-- 花朵 -->
+  <div class="flower">🌸</div>
+  <div class="flower">🌼</div>
+  <div class="flower">🌺</div>
+  <div class="flower">🌻</div>
+  <div class="flower">🌷</div>
+  <!-- 房子 -->
+  <div class="house">
+    <div class="house-body">
+      <div class="house-roof"></div>
+      <div class="house-window left"></div>
+      <div class="house-window right"></div>
+      <div class="house-door"></div>
+    </div>
+  </div>
+  <!-- 人物 -->
+  <div class="person person-1">
+    <div class="person-head"></div>
+    <div class="person-body"></div>
+  </div>
+  <div class="person person-2">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#90CAF9"></div>
+  </div>
+  <div class="person person-3">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#FFF9C4"></div>
+  </div>
+  <!-- 标题 -->
+  <div class="title-area">
+    <h1>广西7日游</h1>
+    <div class="subtitle">桂林 × 阳朔 × 柳州 × 德天</div>
+    <div class="tagline">🎋 山水甲天下 · 等你来 ❤️</div>
+    <div class="tagline" style="font-size:14px; opacity:0.9; margin-top:6px;">📌 2026年8月15日-21日 · 数据来源：网易旅行、今日头条、马蜂窝等公开攻略</div>
+  </div>
+</header>
+
+<!-- ====== 天气预报 ====== -->
+<div class="info-section" style="margin-top:0;">
+  <h2>🌤️ 实时天气预报（数据来源：Open-Meteo）</h2>
+
+  <div class="weather-grid">
+    <!-- 桂林 -->
+    <div class="weather-panel" style="background:#E8F5E9;">
+      <h3 style="color:#2E7D32;">🐘 桂林（8月15日-19日）</h3>
+      <table>
+        <tr style="background:#C8E6C9; color:#1B5E20;">
+          <th>日期</th><th>天气</th><th>温度</th><th>降水</th>
+        </tr>
+        <tr><td>08/15 六</td><td>⛅局部多云</td><td>25~34°C</td><td>0mm</td></tr>
+        <tr style="background:#F1F8E9;"><td>08/16 日</td><td>🌦毛毛雨</td><td>25~33°C</td><td>3.5mm</td></tr>
+        <tr><td>08/17 一</td><td>⛈雷暴</td><td>25~31°C</td><td>22mm</td></tr>
+        <tr style="background:#F1F8E9;"><td>08/18 二</td><td>⏳待确认</td><td>—</td><td>—</td></tr>
+        <tr><td>08/19 三</td><td>⏳待确认</td><td>—</td><td>—</td></tr>
+      </table>
+      <div class="weather-extra" style="color:#558B2F;">☀️ UV最高8.7（极强）· 日出~日落 06:05-19:15</div>
+    </div>
+    <!-- 阳朔 -->
+    <div class="weather-panel" style="background:#FFF3E0;">
+      <h3 style="color:#E65100;">🛶 阳朔（8月15日-19日）</h3>
+      <table>
+        <tr style="background:#FFE0B2; color:#BF360C;">
+          <th>日期</th><th>天气</th><th>温度</th><th>降水</th>
+        </tr>
+        <tr><td>08/15 六</td><td>⛅局部多云</td><td>25~34°C</td><td>0mm</td></tr>
+        <tr style="background:#FFF8E1;"><td>08/16 日</td><td>🌦毛毛雨</td><td>25~33°C</td><td>4mm</td></tr>
+        <tr><td>08/17 一</td><td>⛈雷暴</td><td>25~31°C</td><td>20mm</td></tr>
+        <tr style="background:#FFF8E1;"><td>08/18 二</td><td>⏳待确认</td><td>—</td><td>—</td></tr>
+        <tr><td>08/19 三</td><td>⏳待确认</td><td>—</td><td>—</td></tr>
+      </table>
+      <div class="weather-extra" style="color:#E65100;">☀️ UV最高8（极强）· 日出~日落 06:08-19:12</div>
+    </div>
+  </div>
+  <div class="weather-tip" style="background:#FFF8E1; border-color:#FFE0B2;">
+    <strong>⚠️ 天气出行建议：</strong><br>
+    • <strong>D1（8/15）</strong>抵达桂林，天气良好（局部多云），可安排象鼻山和两江四湖夜景<br>
+    • <strong>D2（8/16）</strong>毛毛雨，漓江水量充足时竹筏最美，遇龙河亦有小雨，备好雨衣<br>
+    • <strong>D3（8/17）</strong>雷暴天气，建议安排室内景点（世外桃源景区室内部分、银子岩溶洞）<br>
+    • <strong>⚠️ 雷雨警告</strong>：8月为台风季，雷暴频发，出行前密切关注天气预报，备好雨具和防水袋<br>
+    • <strong>紫外线极强</strong>（UV 8.7），无论阴晴务必涂防晒霜、戴帽子<br>
+    • 当前25-34°C，体感闷热，注意补水防中暑，带足饮用水
+  </div>
+</div>
+
+<!-- ====== 正文内容 ====== -->
+<main class="content">
+
+  <!-- Day 1 -->
+  <div class="day-card theme-guilin">
+    <div class="day-header">
+      <div class="day-num">D1</div>
+      <div class="day-date">08/15 周六</div>
+      <div class="day-info">
+        <h2>🎒 落地桂林，山水初印象</h2>
+        <div class="route">深圳✈️桂林 → 酒店放行李 → 象鼻山 → 两江四湖夜景 → 正阳步行街</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+         <div class="swiper day1-swiper">
+           <div class="swiper-wrapper">
+            <div class="swiper-slide slide-d1a" data-label="🐘 象鼻山">象鼻山 · 桂林地标</div>
+            <div class="swiper-slide slide-d1b" data-label="🌃 两江四湖夜景">两江四湖 · 璀璨夜景</div>
+           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 必打卡景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🐘 象鼻山（门票75元）</span>
+        <span class="spot-tag">🌃 两江四湖夜景（免费）</span>
+        <span class="spot-tag">🚶 正阳步行街</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍜 桂林米粉（老东江/石记）</span>
+        <span class="food-tag">🥮 马蹄糕</span>
+        <span class="food-tag">🍚 桂林糯米饭</span>
+        <span class="food-tag">🥟 烧麦</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>象鼻山已免费开放（部分区域），建议傍晚去，夜景比白天更美！两江四湖夜景可步行或乘船（船票约210元）。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card theme-yangshuo">
+    <div class="day-header">
+      <div class="day-num">D2</div>
+      <div class="day-date">08/16 周日</div>
+      <div class="day-info">
+        <h2>🛶 漓江竹筏，阳朔田园</h2>
+        <div class="route">桂林 → 漓江竹筏（杨堤-兴坪）→ 阳朔 → 遇龙河竹筏 → 西街夜景</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day2a-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-d2a" data-label="🚣 漓江竹筏">漓江 · 20元背景</div>
+            <div class="swiper-slide slide-d2b" data-label="🌾 遇龙河竹筏">遇龙河 · 田园风光</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 必打卡景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🚣 漓江竹筏（桂林→阳朔，约215元/人）</span>
+        <span class="spot-tag">🌾 遇龙河竹筏（约180元/人）</span>
+        <span class="spot-tag">🏮 阳朔西街（免费）</span>
+        <span class="spot-tag">📍 20元人民币背景图（兴坪）</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🐟 阳朔啤酒鱼（招牌菜！）</span>
+        <span class="food-tag">🥘 田螺酿</span>
+        <span class="food-tag">🥗 荔浦芋扣肉</span>
+        <span class="food-tag">🍵 桂花茶</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">⚠️</span>
+        <span>漓江竹筏建议提前在携程/美团预订！8月为雨季，水量充足时竹筏风景最佳。遇龙河为人工竹筏，更宁静田园，推荐下午去。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">💡</span>
+        <span>西街晚上很热闹，但消费偏高，建议逛一圈拍照即可，吃饭去本地人推荐的小店。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card theme-yangshuo">
+    <div class="day-header">
+      <div class="day-num">D3</div>
+      <div class="day-date">08/17 周一</div>
+      <div class="day-info">
+        <h2>🏞️ 世外桃源，银子岩</h2>
+        <div class="route">阳朔 → 世外桃源（景区）→ 银子岩 → 十里画廊骑行</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day3a-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-d3a" data-label="🏞️ 世外桃源">世外桃源 · 田园意境</div>
+            <div class="swiper-slide slide-d3b" data-label="🪨 银子岩">银子岩 · 溶洞奇观</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 必打卡景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏞️ 世外桃源（门票约60元）</span>
+        <span class="spot-tag">🪨 银子岩（门票80元，含儿童票）</span>
+        <span class="spot-tag">🚴 十里画廊（租电动车约50元/天）</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🐟 啤酒鱼（聚龙潭附近）</span>
+        <span class="food-tag">🍜 桂林米粉</span>
+        <span class="food-tag">🥮 艾叶粑粑</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">⚠️</span>
+        <span>今日可能有雷暴（D3天气预报⛈），建议优先安排银子岩溶洞（室内景点），世外桃源视天气灵活安排。十里画廊骑行注意防雷。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">💡</span>
+        <span>银子岩被誉为"壮乡之冠"，溶洞灯光绚丽，拍照很好看！儿童1.2m以下免费，1.2-1.5m儿童票半价。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card theme-longji">
+    <div class="day-header">
+      <div class="day-num">D4</div>
+      <div class="day-date">08/18 周二</div>
+      <div class="day-info">
+        <h2>🌾 龙脊梯田，云端稻浪</h2>
+        <div class="route">阳朔 → 龙脊梯田（大寨）→ 返回阳朔</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day4a-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-d4a" data-label="🌾 龙脊梯田">龙脊梯田 · 云端稻浪</div>
+            <div class="swiper-slide slide-d4b" data-label="🌄 金坑大寨">金坑大寨 · 观景台</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 必打卡景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🌾 龙脊梯田·大寨（门票100元）</span>
+        <span class="spot-tag">🌄 金坑大寨观景台</span>
+        <span class="spot-tag">📍 黄洛瑶寨</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍚 龙脊糯米饭</span>
+        <span class="food-tag">🥘 竹筒饭</span>
+        <span class="food-tag">🥬 梯田生态蔬菜</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">⚠️</span>
+        <span>龙脊梯田距阳朔约2小时车程，建议早出发！8月梯田还是绿色，9-10月才是金色稻浪季。天气不确定（⏳待确认），出发前务必查看实时天气。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">💡</span>
+        <span>大寨有缆车可上山（单程50元），带小孩建议坐缆车。山顶可住一晚看日出，但今日需返回阳朔。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card theme-liuzhou">
+    <div class="day-header">
+      <div class="day-num">D5</div>
+      <div class="day-date">08/19 周三</div>
+      <div class="day-info">
+        <h2>🍜 阳朔→柳州，螺蛳粉之城</h2>
+        <div class="route">阳朔 → 柳州（高铁/大巴约2h）→ 螺蛳粉街 → 马鞍山夜景</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day5a-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-d5a" data-label="🍜 柳州螺蛳粉">柳州 · 螺蛳粉之都</div>
+            <div class="swiper-slide slide-d5b" data-label="🏮 马鞍山夜景">马鞍山 · 俯瞰柳州</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 必打卡景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏮 马鞍山公园（免费，登顶看柳州夜景）</span>
+        <span class="spot-tag">🌉 窑埠古镇（免费，拍柳州山水城市夜景）</span>
+        <span class="spot-tag">🛕 柳侯公园</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食清单</div>
+      <div class="food-tags">
+        <span class="food-tag">🍜 螺蛳粉（西环肥仔/阿柠檬/聚宝）</span>
+        <span class="food-tag">🥣 螺蛳鸭脚煲</span>
+        <span class="food-tag">🧋 柳州蛋奶/芒果炒冰</span>
+        <span class="food-tag">🍢 柳州烧烤</span>
+        <span class="food-tag">🥭 柳州水果（芒果/龙眼）</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>柳州螺蛳粉比桂林米粉更辣更爽！马鞍山建议傍晚上去，看日落+夜景一气呵成。夜景灯光约19:30开启。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card theme-detian">
+    <div class="day-header">
+      <div class="day-num">D6</div>
+      <div class="day-date">08/20 周四</div>
+      <div class="day-info">
+        <h2>🌊 德天跨国瀑布，中越边境</h2>
+        <div class="route">柳州 → 南宁 → 德天瀑布 → 返回南宁</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day6a-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-d6a" data-label="💧 德天跨国瀑布">德天瀑布 · 亚洲第一</div>
+            <div class="swiper-slide slide-d6b" data-label="🇻🇳 中越边境">界碑 · 中越边境</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 必打卡景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">💧 德天跨国瀑布（门票80元）</span>
+        <span class="spot-tag">🇻🇳 界碑（中越边境）</span>
+        <span class="spot-tag">🚣 竹筏近观瀑布</span>
+        <span class="spot-tag">📍 归春河</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍜 南宁老友粉</span>
+        <span class="food-tag">🥥 南宁酸野</span>
+        <span class="food-tag">🍢 广西烧烤</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">⚠️</span>
+        <span>德天瀑布距南宁市区约3.5小时车程，建议报一日团或包车前往。8月瀑布水量充沛，最为壮观！天气⏳待确认，出行前查实时预报。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">💡</span>
+        <span>返回南宁后可逛三街两巷（历史街区），晚宿南宁，为次日返程做准备。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-card theme-flight">
+    <div class="day-header">
+      <div class="day-num">D7</div>
+      <div class="day-date">08/21 周五</div>
+      <div class="day-info">
+        <h2>✈️ 满载山水记忆，返程</h2>
+        <div class="route">南宁 → 深圳（飞机返程）</div>
+      </div>
+    </div>
+    <div class="day-body" style="text-align:center; padding:40px;">
+      <div style="font-size:64px; margin-bottom:15px;">🧳✈️💕</div>
+      <p style="font-family:'ZCOOL KuaiLe',cursive; font-size:20px; color:var(--dark);">桂林山水甲天下，不虚此行！</p>
+    </div>
+  </div>
+
+  <!-- 实用信息 -->
+  <div class="info-section">
+    <h2>📋 实用信息汇总</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">🚄</div>
+        <h3>交通建议</h3>
+        <p>深圳✈️桂林/南宁✈️深圳（往返）<br>桂林→阳朔：竹筏/大巴约2h<br>阳朔→柳州：大巴/拼车约2h<br>柳州→南宁→德天：包车/跟团</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🏨</div>
+        <h3>住宿推荐</h3>
+        <p>桂林：两江四湖附近（2晚）<br>阳朔：西街/遇龙河旁（2晚）<br>柳州：五菱大道附近（1晚）<br>南宁：朝阳广场（1晚）</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">⚠️</div>
+        <h3>注意事项</h3>
+        <p>1. 8月为台风季，雷暴频发！<br>2. 备好雨具+防水袋<br>3. 漓江水量足时最美<br>4. 防晒防蚊必备<br>5. 德天瀑布需提前订票</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">👶</div>
+        <h3>儿童友好</h3>
+        <p>8岁儿童：漓江竹筏/遇龙河可乘坐<br>大部分景点儿童票半价<br>龙脊梯田可坐缆车省力<br>德天瀑布竹筏儿童需成人陪同</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 预算 -->
+  <div class="info-section">
+    <h2>💰 预算参考（2人：1成人 + 1儿童8岁）</h2>
+    <div style="text-align:center; margin-bottom:15px;">
+      <span style="font-size:13px; color:#888; background:#FFF8E1; padding:4px 12px; border-radius:20px; border:1px solid #FFD54F;">
+        📌 数据来源：网易旅行、马蜂窝、今日头条等公开攻略；门票为2025-2026年官方参考价
+      </span>
+    </div>
+    <div style="max-width:600px; margin:0 auto;">
+      <div class="budget-bar">
+        <span class="budget-label">🏨 住宿</span>
+        <div class="budget-track"><div class="budget-fill" style="width:46%"></div></div>
+        <span class="budget-value">1800-2600元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🍜 餐饮</span>
+        <div class="budget-track"><div class="budget-fill" style="width:34%"></div></div>
+        <span class="budget-value">~1300元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚕 市内交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:16%"></div></div>
+        <span class="budget-value">~600元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚄 城际交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:11%"></div></div>
+        <span class="budget-value">~400元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🎫 门票</span>
+        <div class="budget-track"><div class="budget-fill" style="width:13%"></div></div>
+        <span class="budget-value">~600元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🛒 购物零食</span>
+        <div class="budget-track"><div class="budget-fill" style="width:5%"></div></div>
+        <span class="budget-value">200-400元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:15px; padding-top:15px; border-top:2px dashed var(--dark);">
+        <span class="budget-label" style="font-weight:bold;">💵 小计（不含大交通）</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red);">4700-5700元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px;">
+        <span class="budget-label">✈️ 大交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:55%; background:linear-gradient(90deg,#90CAF9,#64B5F6);"></div></div>
+        <span class="budget-value">600-1200元/人</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px; padding-top:12px; border-top:3px double var(--dark);">
+        <span class="budget-label" style="font-size:15px; font-weight:bold;">🎯 预估总计</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#E53935,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red); font-size:18px;">6000-8200元</span>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:18px;">
+      <button onclick="document.getElementById('budgetModal').style.display='flex'" style="font-family:'ZCOOL KuaiLe',cursive; font-size:16px; padding:10px 28px; border-radius:30px; border:3px solid var(--dark); background:var(--warm); color:var(--dark); cursor:pointer; box-shadow:3px 3px 0px var(--dark); transition:all 0.15s;" onmouseover="this.style.background='#FFD54F'; this.style.transform='translate(-1px,-1px)'; this.style.boxShadow='4px 4px 0px var(--dark)';" onmouseout="this.style.background='#FFD54F'; this.style.transform='translate(0,0)'; this.style.boxShadow='3px 3px 0px var(--dark)';">📋 点击查看费用明细</button>
+    </div>
+  </div>
+
+  <!-- 弹窗 -->
+  <div id="budgetModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.55); align-items:center; justify-content:center; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:white; border-radius:20px; border:4px solid var(--dark); padding:28px 30px; max-width:640px; width:100%; max-height:85vh; overflow-y:auto; box-shadow:6px 6px 0px var(--dark); position:relative;">
+      <button onclick="document.getElementById('budgetModal').style.display='none'" style="position:absolute; top:12px; right:16px; font-size:22px; background:none; border:none; cursor:pointer; color:var(--dark); line-height:1;">✕</button>
+      <h3 style="font-family:'ZCOOL KuaiLe',cursive; color:var(--dark); margin-bottom:16px; font-size:20px; padding-right:40px;">📋 费用明细（2人，7天）</h3>
+      <table style="width:100%; font-size:13px; border-collapse:collapse; color:var(--dark);">
+        <tr style="background:#FFF8E1; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 酒店（6晚：桂林2晚+阳朔2晚+柳州1晚+南宁1晚，含早）</td>
+          <td style="text-align:right; font-weight:bold; border-bottom:1px solid #E0E0E0;">1800-2600元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D1桂林（米粉+夜市小吃，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D2阳朔（啤酒鱼大餐+西街小吃，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D3阳朔（十里画廊周边，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D4龙脊（梯田农家餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D5柳州（螺蛳粉街+夜景小吃，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D6德天+南宁（途中简餐+南宁老友粉，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D7返程（早餐+零食，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~100元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 餐饮小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~1300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚄 深圳✈️桂林（往返大交通，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">1200-2400元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚐 桂林→阳朔（竹筏/大巴，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚐 阳朔→龙脊梯田（包车/拼车，往返）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚐 阳朔→柳州（大巴/拼车，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚐 柳州→南宁→德天（包车/跟团，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚐 南宁→深圳（返程交通，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚗 市内交通（打车/电动车租赁，7天）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 交通小计（含城际）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~1300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 象鼻山（成人75，儿童1.2m以下免费/1.2-1.5m半价）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~75元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 漓江竹筏（杨堤-兴坪段，215元/人×2）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">430元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 遇龙河竹筏（约180元/人×2，儿童半票）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~270元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 银子岩（成人80，儿童半价40）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">120元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 龙脊梯田（成人100，儿童半价50）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 德天瀑布（成人80，儿童半价40）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">120元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 门票小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~600元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px;">🛒 购物+零食+饮料</td>
+          <td style="text-align:right; font-weight:bold;">200-400元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:7px 6px;">🧮 小计（不含深圳往返机票）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">4700-5700元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold; border-top:2px solid var(--dark);">
+          <td style="padding:7px 6px;">✈️ 深圳✈️桂林/南宁✈️深圳（往返机票，2人）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">1200-2400元</td>
+        </tr>
+        <tr style="background:linear-gradient(135deg,#E53935,#FF8A65); color:white; font-weight:bold;">
+          <td style="padding:9px 6px; font-size:15px;">🎯 预估总计（2人，7天）</td>
+          <td style="text-align:right; font-size:19px;">6000-8200元</td>
+        </tr>
+      </table>
+      <div class="tip-box" style="margin-top:12px;">
+        <span class="tip-icon">👶</span>
+        <span><b>儿童票价（8岁）：</b>象鼻山/银子岩/龙脊梯田/德天瀑布均按1.2-1.5m儿童票半价计算。漓江竹筏和遇龙河竹筏视身高而定，建议现场咨询。大部分景点对6周岁以下或身高1.2米以下免费。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">📊</span>
+        <span><b>行程覆盖：</b>本预算严格对应7日行程（D1深圳落地桂林→D2-3阳朔→D4龙脊→D5柳州→D6德天→D7返程南宁），含桂林+阳朔+柳州+南宁四地住宿6晚，不含额外购物或自费项目。</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ====== 底部 ====== -->
+<footer class="poster-footer">
+  <h2>🎋 桂林山水 · 等你来 ❤️</h2>
+  <p>#广西旅行 #桂林山水 #阳朔竹筏 #龙脊梯田 #柳州螺蛳粉 #德天瀑布 #亲子游 #攻略</p>
+  <div class="footer-flowers">🎋</div>
+  <div class="footer-flowers">🌸</div>
+  <div class="footer-flowers">🌼</div>
+  <div class="footer-flowers">🌺</div>
+  <div class="footer-flowers">🌻</div>
+  <div class="footer-flowers">🎋</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.querySelectorAll('.carousel-wrap .swiper').forEach(function(el) {
+  new Swiper(el, {
+    loop: true,
+    pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
+    navigation: { nextEl: el.querySelector('.swiper-button-next'), prevEl: el.querySelector('.swiper-button-prev') },
+    autoplay: { delay: 3500, disableOnInteraction: false },
+  });
+});
+</script>
+
+</body>
+</html>

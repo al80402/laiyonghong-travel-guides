@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>洛阳7日旅行攻略</title>
+<meta property="og:title" content="洛阳7日旅行攻略 | 神都古都亲子文化之旅">
+<meta property="og:description" content="2人7日行程：龙门石窟×白马寺×老君山×隋唐洛阳城，含美食攻略、景点打卡、预算明细（约6200-8000元）">
+<meta property="og:image" content="https://laiyonghong.ddnsto.com/static/luoyang_trip_cover.jpg">
+<meta property="og:url" content="https://laiyonghong.ddnsto.com/static/luoyang-7day.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://laiyonghong.ddnsto.com/static/luoyang_trip_cover.jpg" type="image/jpeg">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<style>
+  :var {
+    --sky: #87CEEB;
+    --grass: #7CB342;
+    --warm: #FFD54F;
+    --peach: #FFAB91;
+    --pink: #F48FB1;
+    --brown: #8D6E63;
+    --cream: #FFF8E1;
+    --dark: #4E342E;
+    --red: #E53935;
+    --green-dark: #558B2F;
+    --title-dark: #0D47A1;
+    --title-stroke: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  /* 描边字体 */
+  .stroke-text {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 2px var(--dark);
+    color: white;
+    text-shadow: 3px 3px 0px var(--dark);
+  }
+
+  .stroke-text-fill {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 1.5px var(--dark);
+    color: var(--warm);
+    text-shadow: 2px 2px 0px var(--dark);
+  }
+
+  /* 海报头部 */
+  .poster-header {
+    background: linear-gradient(180deg, #87CEEB 0%, #B2EBF2 40%, #A5D6A7 70%, #7CB342 100%);
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  /* 宫崎骏风格云朵 */
+  .cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  .cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+  }
+  .cloud-1 { width: 120px; height: 50px; top: 60px; left: 10%; animation: float 8s ease-in-out infinite; }
+  .cloud-1::before { width: 60px; height: 60px; top: -30px; left: 20px; }
+  .cloud-1::after { width: 80px; height: 50px; top: -20px; left: 50px; }
+  .cloud-2 { width: 160px; height: 60px; top: 100px; right: 15%; animation: float 10s ease-in-out infinite reverse; }
+  .cloud-2::before { width: 80px; height: 80px; top: -40px; left: 30px; }
+  .cloud-2::after { width: 100px; height: 60px; top: -25px; left: 60px; }
+  .cloud-3 { width: 100px; height: 40px; top: 40px; left: 40%; animation: float 6s ease-in-out infinite; }
+  .cloud-3::before { width: 50px; height: 50px; top: -25px; left: 15px; }
+  .cloud-3::after { width: 65px; height: 40px; top: -18px; left: 40px; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* 太阳 */
+  .sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #FFD54F, #FFB300);
+    border-radius: 50%;
+    top: 30px;
+    right: 10%;
+    box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300;
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300; }
+    50% { box-shadow: 0 0 80px #FFD54F, 0 0 140px #FFB300; }
+  }
+
+  /* 山丘 */
+  .hills {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+  }
+  .hill {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .hill-1 { width: 400px; height: 180px; background: #689F38; left: -50px; }
+  .hill-2 { width: 500px; height: 200px; background: #7CB342; left: 200px; }
+  .hill-3 { width: 450px; height: 160px; background: #8BC34A; right: -50px; }
+  .hill-4 { width: 300px; height: 120px; background: #9CCC65; left: 50%; transform: translateX(-50%); }
+
+  /* 小房子 */
+  .house {
+    position: absolute;
+    bottom: 80px;
+    left: 15%;
+  }
+  .house-body {
+    width: 60px;
+    height: 45px;
+    background: #FFF9C4;
+    border: 3px solid var(--dark);
+    position: relative;
+  }
+  .house-roof {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 35px solid var(--red);
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    border: 3px solid var(--dark);
+    border-top: none;
+  }
+  .house-door {
+    width: 18px;
+    height: 28px;
+    background: var(--brown);
+    border: 2px solid var(--dark);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px 2px 0 0;
+  }
+  .house-window {
+    width: 14px;
+    height: 14px;
+    background: #B3E5FC;
+    border: 2px solid var(--dark);
+    position: absolute;
+    top: 8px;
+    border-radius: 50%;
+  }
+  .house-window.left { left: 6px; }
+  .house-window.right { right: 6px; }
+
+  /* 小人物 */
+  .person {
+    position: absolute;
+    bottom: 60px;
+  }
+  .person-body {
+    width: 20px;
+    height: 25px;
+    background: var(--pink);
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+  }
+  .person-head {
+    width: 18px;
+    height: 18px;
+    background: #FFE0B2;
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+    margin: 0 auto 2px;
+  }
+  .person-1 { left: 25%; }
+  .person-2 { left: 28%; }
+  .person-3 { right: 20%; }
+
+  /* 花朵 */
+  .flower {
+    position: absolute;
+    bottom: 30px;
+    font-size: 24px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+  .flower:nth-child(1) { left: 5%; animation-delay: 0s; }
+  .flower:nth-child(2) { left: 12%; animation-delay: 0.5s; }
+  .flower:nth-child(3) { right: 8%; animation-delay: 1s; }
+  .flower:nth-child(4) { right: 15%; animation-delay: 1.5s; }
+  .flower:nth-child(5) { left: 35%; animation-delay: 0.3s; }
+
+  /* 蝴蝶 */
+  .butterfly {
+    position: absolute;
+    font-size: 20px;
+    animation: fly 12s linear infinite;
+  }
+  @keyframes fly {
+    0% { top: 200px; left: -50px; }
+    25% { top: 150px; }
+    50% { top: 180px; left: 50%; }
+    75% { top: 130px; }
+    100% { top: 200px; left: 110%; }
+  }
+
+  /* 标题区域 */
+  .title-area {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title-area::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10%;
+    right: -10%;
+    bottom: -20px;
+    background: rgba(13, 71, 161, 0.55);
+    border-radius: 24px;
+    z-index: -1;
+    backdrop-filter: blur(2px);
+  }
+  .title-area h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 88px;
+    color: var(--dark);
+    text-shadow:
+      -3px -3px 0 #FFF, 3px -3px 0 #FFF,
+      -3px 3px 0 #FFF, 3px 3px 0 #FFF,
+      -3px 0 0 #FFF, 3px 0 0 #FFF,
+      0 -3px 0 #FFF, 0 3px 0 #FFF,
+      4px 4px 0px rgba(0,0,0,0.2);
+    letter-spacing: 10px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .title-area .subtitle {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: var(--dark);
+    text-shadow:
+      -2px -2px 0 #FFF, 2px -2px 0 #FFF,
+      -2px 2px 0 #FFF, 2px 2px 0 #FFF,
+      -2px 0 0 #FFF, 2px 0 0 #FFF,
+      0 -2px 0 #FFF, 0 2px 0 #FFF,
+      3px 3px 0px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    letter-spacing: 6px;
+  }
+  .title-area .tagline {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    background: rgba(0,0,0,0.45);
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+  }
+
+  /* 美食emoji装饰 */
+  .food-deco {
+    position: absolute;
+    font-size: 40px;
+    z-index: 5;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+  }
+  .food-deco:nth-child(1) { top: 120px; left: 8%; animation-delay: 0s; }
+  .food-deco:nth-child(2) { top: 160px; right: 8%; animation-delay: 0.3s; }
+  .food-deco:nth-child(3) { top: 280px; left: 5%; animation-delay: 0.6s; }
+  .food-deco:nth-child(4) { top: 300px; right: 5%; animation-delay: 0.9s; }
+
+  /* 主内容 */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  /* 日程卡片 */
+  .day-card {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px var(--dark);
+    transition: transform 0.3s;
+  }
+  .day-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px var(--dark);
+  }
+
+  /* 卡片头部 */
+  .day-header {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 3px solid var(--dark);
+  }
+  .day-num {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 48px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    min-width: 80px;
+    text-align: center;
+  }
+  .day-date {
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.2);
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-top: 4px;
+  }
+  .day-info h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 24px;
+    color: var(--dark);
+    letter-spacing: 2px;
+  }
+  .day-info .route {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* 卡片内容 */
+  .day-body {
+    padding: 25px;
+  }
+  .section-title {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .icon {
+    font-size: 22px;
+  }
+
+  /* 景点标签 */
+  .spot-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .spot-tag {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* 美食标签 */
+  .food-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .food-tag {
+    background: #FFF3E0;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* Tips */
+  .tip-box {
+    background: #E8F5E9;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .tip-box .tip-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  /* 颜色主题 */
+  .theme-arrival .day-header { background: linear-gradient(135deg, #90CAF9, #64B5F6); }
+  .theme-longmen .day-header { background: linear-gradient(135deg, #CE93D8, #BA68C8); }
+  .theme-museum .day-header { background: linear-gradient(135deg, #FFCC80, #FFB74D); }
+  .theme-laojun .day-header { background: linear-gradient(135deg, #A5D6A7, #81C784); }
+  .theme-sui-tang .day-header { background: linear-gradient(135deg, #EF9A9A, #E57373); }
+  .theme-night .day-header { background: linear-gradient(135deg, #9575CD, #7E57C2); }
+  .theme-depart .day-header { background: linear-gradient(135deg, #80DEEA, #4DD0E1); }
+
+  /* 天气预报 */
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .weather-panel {
+    border-radius: 16px;
+    padding: 18px;
+  }
+  .weather-panel h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .weather-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .weather-panel table th {
+    padding: 6px 4px;
+    text-align: center;
+    border-radius: 8px 0 0 0;
+  }
+  .weather-panel table th:last-child {
+    border-radius: 0 8px 0 0;
+  }
+  .weather-panel table td {
+    padding: 5px 4px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .weather-panel .weather-extra {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .weather-tip {
+    max-width: 900px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.8;
+    border: 1px solid #FFE0B2;
+  }
+  @media (max-width: 600px) {
+    .weather-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .weather-panel table {
+      font-size: 12px;
+    }
+    .weather-panel table th,
+    .weather-panel table td {
+      padding: 4px 2px;
+    }
+    .weather-tip {
+      margin-left: 12px;
+      margin-right: 12px;
+      padding: 12px 14px;
+      font-size: 12px;
+    }
+  }
+
+  /* 信息汇总 */
+  .info-section {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0px var(--dark);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .info-section h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 28px;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .info-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 18px;
+    text-align: center;
+  }
+  .info-card .info-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .info-card h3 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .info-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* 预算 */
+  .budget-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+  }
+  .budget-label {
+    font-size: 13px;
+    width: 60px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .budget-track {
+    flex: 1;
+    height: 16px;
+    background: #E0E0E0;
+    border-radius: 8px;
+    border: 2px solid var(--dark);
+    overflow: hidden;
+  }
+  .budget-fill {
+    height: 100%;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--grass), var(--warm));
+  }
+  .budget-value {
+    font-size: 13px;
+    width: 80px;
+    flex-shrink: 0;
+    font-weight: bold;
+  }
+
+  /* 底部 */
+  .poster-footer {
+    background: linear-gradient(180deg, #7CB342, #558B2F);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .poster-footer h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    margin-bottom: 15px;
+  }
+  .poster-footer p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .footer-flowers {
+    position: absolute;
+    bottom: 10px;
+    font-size: 28px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  .footer-flowers:nth-child(1) { left: 10%; animation-delay: 0s; }
+  .footer-flowers:nth-child(2) { left: 25%; animation-delay: 0.5s; }
+  .footer-flowers:nth-child(3) { left: 40%; animation-delay: 1s; }
+  .footer-flowers:nth-child(4) { right: 40%; animation-delay: 1.5s; }
+  .footer-flowers:nth-child(5) { right: 25%; animation-delay: 0.3s; }
+  .footer-flowers:nth-child(6) { right: 10%; animation-delay: 0.8s; }
+
+  /* 装饰元素 */
+  .deco-line {
+    width: 60px;
+    height: 4px;
+    background: var(--warm);
+    border-radius: 2px;
+    margin: 15px 0;
+    border: 2px solid var(--dark);
+  }
+
+  /* 响应式 */
+  @media (max-width: 600px) {
+    .title-area h1 { font-size: 42px; letter-spacing: 4px; }
+    .title-area .subtitle { font-size: 18px; }
+    .day-num { font-size: 36px; min-width: 60px; }
+    .day-info h2 { font-size: 18px; }
+    .info-grid { grid-template-columns: 1fr; }
+  }
+
+  /* 景点轮播图 */
+  .carousel-wrap {
+    margin-bottom: 18px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid var(--dark);
+    box-shadow: 4px 4px 0px var(--dark);
+  }
+  .carousel-wrap .swiper {
+    width: 100%;
+    height: 160px;
+  }
+  .carousel-wrap .swiper-slide img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+  }
+  .carousel-wrap .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+    border: 2px solid var(--dark);
+  }
+  .carousel-wrap .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--red);
+    border-color: var(--dark);
+  }
+  .carousel-wrap .swiper-button-next,
+  .carousel-wrap .swiper-button-prev {
+    color: white;
+    background: rgba(0,0,0,0.35);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .carousel-wrap .swiper-button-next::after,
+  .carousel-wrap .swiper-button-prev::after {
+    font-size: 14px;
+    font-weight: bold;
+  }
+</style>
+
+<link rel="canonical" href="https://laiyonghong.ddnsto.com/static/luoyang-7day.html">
+
+<!-- WeChat Share Optimization -->
+<meta property="weixin:content:img_path" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body>
+
+<!-- ====== 海报头部 ====== -->
+<header class="poster-header">
+  <!-- 云朵 -->
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+  <!-- 太阳 -->
+  <div class="sun"></div>
+  <!-- 蝴蝶 -->
+  <div class="butterfly">🦋</div>
+  <!-- 美食装饰 -->
+  <div class="food-deco">🏛️</div>
+  <div class="food-deco">🍜</div>
+  <div class="food-deco">🌸</div>
+  <div class="food-deco">🏮</div>
+  <!-- 山丘 -->
+  <div class="hills">
+    <div class="hill hill-1"></div>
+    <div class="hill hill-2"></div>
+    <div class="hill hill-3"></div>
+    <div class="hill hill-4"></div>
+  </div>
+  <!-- 花朵 -->
+  <div class="flower">🌸</div>
+  <div class="flower">🌼</div>
+  <div class="flower">🌺</div>
+  <div class="flower">🌻</div>
+  <div class="flower">🌷</div>
+  <!-- 房子 -->
+  <div class="house">
+    <div class="house-body">
+      <div class="house-roof"></div>
+      <div class="house-window left"></div>
+      <div class="house-window right"></div>
+      <div class="house-door"></div>
+    </div>
+  </div>
+  <!-- 人物 -->
+  <div class="person person-1">
+    <div class="person-head"></div>
+    <div class="person-body"></div>
+  </div>
+  <div class="person person-2">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#90CAF9"></div>
+  </div>
+  <div class="person person-3">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#FFF9C4"></div>
+  </div>
+  <!-- 标题 -->
+  <div class="title-area">
+    <h1>洛阳7日游</h1>
+    <div class="subtitle">神都古都 · 牡丹花都</div>
+    <div class="tagline">🏛️ 千年帝都 · 牡丹花城 · 直抄作业 📋</div>
+    <div class="tagline" style="font-size:14px; opacity:0.9; margin-top:6px;">📌 2026年8月15日-21日 · 数据来源：网易旅行、今日头条、半岛金旅行等公开攻略</div>
+  </div>
+</header>
+
+<!-- ====== 天气预报 ====== -->
+<div class="info-section" style="margin-top:0;">
+  <h2>🌤️ 实时天气预报（数据来源：Open-Meteo）</h2>
+
+  <div class="weather-grid">
+    <!-- 洛阳 -->
+    <div class="weather-panel" style="background:#E8F5E9;">
+      <h3 style="color:#2E7D32;">🏛️ 洛阳（8月15日-21日）</h3>
+      <table>
+        <tr style="background:#C8E6C9; color:#1B5E20;">
+          <th>日期</th><th>天气</th><th>温度</th><th>降水</th>
+        </tr>
+        <tr><td>08/15 六</td><td>☀️晴</td><td>23~32°C</td><td>0mm</td></tr>
+        <tr style="background:#F1F8E9;"><td>08/16 日</td><td>☀️晴</td><td>24~33°C</td><td>0mm</td></tr>
+        <tr><td>08/17 一</td><td>⛅多云</td><td>23~31°C</td><td>0mm</td></tr>
+        <tr style="background:#F1F8E9;"><td>08/18 二</td><td>☀️晴</td><td>24~32°C</td><td>0mm</td></tr>
+        <tr><td>08/19 三</td><td>⛅多云</td><td>23~30°C</td><td>0mm</td></tr>
+        <tr style="background:#F1F8E9;"><td>08/20 四</td><td>⏳待确认</td><td>—</td><td>—</td></tr>
+        <tr><td>08/21 五</td><td>⏳待确认</td><td>—</td><td>—</td></tr>
+      </table>
+      <div class="weather-extra" style="color:#558B2F;">☀️ UV最高7.5（强）· 日出~日落 05:52-19:18</div>
+    </div>
+  </div>
+  <div class="weather-tip" style="background:#FFF8E1; border-color:#FFE0B2;">
+    <strong>⚠️ 天气出行建议：</strong><br>
+    • <strong>D1-D5</strong>洛阳以晴到多云为主，23-33°C，体感舒适偏热，注意防晒补水<br>
+    • <strong>紫外线较强</strong>（UV 6.7-7.5），户外景点务必涂防晒霜、戴帽子<br>
+    • <strong>D4老君山</strong>山区气温比市区低5-8°C，建议带一件薄外套<br>
+    • 近期无降水，适合户外徒步和夜游活动
+  </div>
+</div>
+
+<!-- ====== 正文内容 ====== -->
+<main class="content">
+
+  <!-- Day 1 -->
+  <div class="day-card theme-arrival">
+    <div class="day-header">
+      <div class="day-num">D1</div>
+      <div class="day-date">08/15 周六</div>
+      <div class="day-info">
+        <h2>🎒 抵达神都</h2>
+        <div class="route">落地洛阳 → 酒店放行李 → 洛浦公园 → 应天门夜景 → 西工小街</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">🌃</span> 夜景打卡</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🌳 洛浦公园</span>
+        <span class="spot-tag">🏯 应天门</span>
+        <span class="spot-tag">🏮 西工小街</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🥣 牛肉汤</span>
+        <span class="food-tag">🥣 羊肉汤</span>
+        <span class="food-tag">🫓 锅贴</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>第一天别安排太满，先适应气候，晚上应天门夜景超震撼，像梦回大唐！</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card theme-longmen">
+    <div class="day-header">
+      <div class="day-num">D2</div>
+      <div class="day-date">08/16 周日</div>
+      <div class="day-info">
+        <h2>🗿 龙门石窟 + 白马寺</h2>
+        <div class="route">龙门石窟（上午）→ 白马寺（下午）</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+         <div class="swiper day2-swiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="/static/images/d2-longmen.jpg" alt="龙门石窟"></div>
+           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">🏛️</span> 龙门石窟必看点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🗿 卢舍那大佛</span>
+        <span class="spot-tag">⛩️ 奉先寺</span>
+        <span class="spot-tag">🕯️ 古阳洞</span>
+        <span class="spot-tag">🪨 宾阳三洞</span>
+        <span class="spot-tag">🌉 香山寺</span>
+        <span class="spot-tag">⛪ 白园</span>
+      </div>
+      <div class="section-title"><span class="icon">🏯</span> 白马寺必看点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">⛩️ 天王殿</span>
+        <span class="spot-tag">🛕 大雄宝殿</span>
+        <span class="spot-tag">🗼 齐云塔</span>
+        <span class="spot-tag">🌏 泰国/缅甸/印度风格佛殿</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食</div>
+      <div class="food-tags">
+        <span class="food-tag">🥣 牛肉汤</span>
+        <span class="food-tag">🍜 浆面条</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🎫</span>
+        <span>龙门石窟门票100元（儿童半价50元），白马寺35元（儿童票约18元）。龙门建议请讲解或租讲解器，不然就是看石头😂 全程约需5-6小时</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <span class="tip-icon">💡</span>
+        <span>白马寺是中国第一古刹，有"中国佛教祖庭"之称，还有东南亚风格佛殿，拍照很出片~</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card theme-museum">
+    <div class="day-header">
+      <div class="day-num">D3</div>
+      <div class="day-date">08/17 周一</div>
+      <div class="day-info">
+        <h2>🏺 博物馆日</h2>
+        <div class="route">洛阳博物馆 → 关林 → 九洲池夜景</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">✨</span> 必看展品</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🦕 龙门石窟模型</span>
+        <span class="spot-tag">🏺 唐三彩</span>
+        <span class="spot-tag">💎 玉石器</span>
+        <span class="spot-tag">🪙 货币展</span>
+        <span class="spot-tag">🦴 石化人类化石</span>
+      </div>
+      <div class="section-title"><span class="icon">🏯</span> 关林 + 九洲池</div>
+      <div class="spot-tags">
+        <span class="spot-tag">⚔️ 关林（关羽葬首处）</span>
+        <span class="spot-tag">🌙 九洲池夜景</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食</div>
+      <div class="food-tags">
+        <span class="food-tag">🥣 不翻汤</span>
+        <span class="food-tag">🍲 洛阳水席</span>
+        <span class="food-tag">🥣 羊肉汤</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🎫</span>
+        <span>洛阳博物馆免费（需预约），关林40元，九洲池免费。周一博物馆可能闭馆，建议提前确认开放时间~</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card theme-laojun">
+    <div class="day-header">
+      <div class="day-num">D4</div>
+      <div class="day-date">08/18 周二</div>
+      <div class="day-info">
+        <h2>⛰️ 老君山一日游</h2>
+        <div class="route">洛阳 → 栾川县老君山（往返约3小时）</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day4-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/static/images/d4-laojun.jpg" alt="老君山"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">⛰️</span> 必去打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏯 金顶道观群</span>
+        <span class="spot-tag">🌄 十里画屏</span>
+        <span class="spot-tag">☁️ 中天门</span>
+        <span class="spot-tag">📸 马鬃岭观景台</span>
+        <span class="spot-tag">🛕 道德府</span>
+      </div>
+      <div class="section-title"><span class="icon">🚡</span> 索道信息</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🚠 一级索道（云景索道）80元</span>
+        <span class="spot-tag">🚡 二级索道（中灵索道）80元</span>
+        <span class="spot-tag">⚠️ 建议至少坐一级索道</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 山上美食</div>
+      <div class="food-tags">
+        <span class="food-tag">🍜 泡面（山上贵但暖身）</span>
+        <span class="food-tag">🥜 烤肠</span>
+        <span class="food-tag">🍵 热姜茶</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🎫</span>
+        <span>老君山门票100元（儿童票约50元），索道另付。建议提前在美团/携程购票。全程步行上山约4-5小时，坐索道可节省2小时</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <span class="tip-icon">⚠️</span>
+        <span>山区比市区低5-8°C，务必带薄外套！山上风大，注意防风。手机充满电，拍照耗电极快</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card theme-sui-tang">
+    <div class="day-header">
+      <div class="day-num">D5</div>
+      <div class="day-date">08/19 周三</div>
+      <div class="day-info">
+        <h2>🏯 隋唐洛阳城</h2>
+        <div class="route">明堂天堂 → 天堂摩崖造像 → 应天门</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">🏛️</span> 景点打卡</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏯 明堂（武则天朝会大典）</span>
+        <span class="spot-tag">✨ 天堂（佛堂，可登临）</span>
+        <span class="spot-tag">🗿 天堂摩崖造像</span>
+        <span class="spot-tag">🏮 应天门夜景</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食</div>
+      <div class="food-tags">
+        <span class="food-tag">🍲 真不同饭店（水席）</span>
+        <span class="food-tag">🥣 牛肉汤</span>
+        <span class="food-tag">🫓 锅贴</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🎫</span>
+        <span>明堂天堂联票约90元（儿童半价），隋唐洛阳城遗址公园部分区域免费。应天门夜景免费，开灯时间约19:30，非常壮观！</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card theme-night">
+    <div class="day-header">
+      <div class="day-num">D6</div>
+      <div class="day-date">08/20 周四</div>
+      <div class="day-info">
+        <h2>🌙 水席夜游</h2>
+        <div class="route">丽景门 → 洛邑古城夜景 → 水席体验</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">📸</span> 夜景打卡</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏯 丽景门</span>
+        <span class="spot-tag">🏮 洛邑古城</span>
+        <span class="spot-tag">🌙 古城灯光秀</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 洛阳水席必点</div>
+      <div class="food-tags">
+        <span class="food-tag">🍲 牡丹燕菜</span>
+        <span class="food-tag">🥣 连汤肉片</span>
+        <span class="food-tag">🍲 萝卜丝丸子汤</span>
+        <span class="food-tag">🥘 焦炸丸子</span>
+        <span class="food-tag">🥣 小酥肉</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>洛邑古城晚上亮灯后超美，穿汉服拍照绝佳！水席推荐真不同或管记水席，人均约60-80元，记得提前排队</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-card theme-depart">
+    <div class="day-header">
+      <div class="day-num">D7</div>
+      <div class="day-date">08/21 周五</div>
+      <div class="day-info">
+        <h2>✈️ 满载而归</h2>
+        <div class="route">洛阳 → 郑州/直飞深圳</div>
+      </div>
+    </div>
+    <div class="day-body" style="text-align:center; padding:40px;">
+      <div style="font-size:64px; margin-bottom:15px;">🧳✈️💕</div>
+      <p style="font-family:'ZCOOL KuaiLe',cursive; font-size:20px; color:var(--dark);">神都再见，期待下次相遇！</p>
+    </div>
+  </div>
+
+  <!-- 信息汇总 -->
+  <div class="info-section">
+    <h2>📋 实用信息汇总</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">🚄</div>
+        <h3>交通建议</h3>
+        <p>市内：打车+地铁<br>老君山：景区直通车/包车<br>返程：洛阳→郑州高铁+飞机</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🏨</div>
+        <h3>住宿推荐</h3>
+        <p>建议住：<br>老城区/西工区<br>靠近应天门/洛邑古城</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">⚠️</div>
+        <h3>注意事项</h3>
+        <p>1. 8月较热，注意防晒补水<br>2. 老君山带薄外套<br>3. 博物馆提前预约<br>4. 水席餐厅旺季需排队</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 预算 -->
+  <div class="info-section">
+    <h2>💰 预算参考（2人：1成人 + 1儿童8岁）</h2>
+    <div style="text-align:center; margin-bottom:15px;">
+      <span style="font-size:13px; color:#888; background:#FFF8E1; padding:4px 12px; border-radius:20px; border:1px solid #FFD54F;">
+        📌 数据来源：网易旅行 (2025.10)、今日头条 (2025.04)、半岛金旅行 (2025.03)；门票为2025年官方参考价
+      </span>
+    </div>
+    <div style="max-width:600px; margin:0 auto;">
+      <div class="budget-bar">
+        <span class="budget-label">🏨 住宿</span>
+        <div class="budget-track"><div class="budget-fill" style="width:50%"></div></div>
+        <span class="budget-value">1800-2400元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🍜 餐饮</span>
+        <div class="budget-track"><div class="budget-fill" style="width:30%"></div></div>
+        <span class="budget-value">~1500元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚕 市内交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:12%"></div></div>
+        <span class="budget-value">~350元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚄 城际交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:10%"></div></div>
+        <span class="budget-value">~300元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🎫 门票</span>
+        <div class="budget-track"><div class="budget-fill" style="width:10%"></div></div>
+        <span class="budget-value">~400元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🛒 购物零食</span>
+        <div class="budget-track"><div class="budget-fill" style="width:5%"></div></div>
+        <span class="budget-value">200-400元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:15px; padding-top:15px; border-top:2px dashed var(--dark);">
+        <span class="budget-label" style="font-weight:bold;">💵 小计（不含大交通）</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red);">4600-5500元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px;">
+        <span class="budget-label">✈️ 大交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:50%; background:linear-gradient(90deg,#90CAF9,#64B5F6);"></div></div>
+        <span class="budget-value">800-1500元/人</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px; padding-top:12px; border-top:3px double var(--dark);">
+        <span class="budget-label" style="font-size:15px; font-weight:bold;">🎯 预估总计</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#E53935,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red); font-size:18px;">6200-8000元</span>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:18px;">
+      <button onclick="document.getElementById('budgetModal').style.display='flex'" style="font-family:'ZCOOL KuaiLe',cursive; font-size:16px; padding:10px 28px; border-radius:30px; border:3px solid var(--dark); background:var(--warm); color:var(--dark); cursor:pointer; box-shadow:3px 3px 0px var(--dark); transition:all 0.15s;" onmouseover="this.style.background='#FFD54F'; this.style.transform='translate(-1px,-1px)'; this.style.boxShadow='4px 4px 0px var(--dark)';" onmouseout="this.style.background='#FFD54F'; this.style.transform='translate(0,0)'; this.style.boxShadow='3px 3px 0px var(--dark)';">📋 点击查看费用明细</button>
+    </div>
+  </div>
+
+  <!-- 弹窗 -->
+  <div id="budgetModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.55); align-items:center; justify-content:center; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:white; border-radius:20px; border:4px solid var(--dark); padding:28px 30px; max-width:640px; width:100%; max-height:85vh; overflow-y:auto; box-shadow:6px 6px 0px var(--dark); position:relative;">
+      <button onclick="document.getElementById('budgetModal').style.display='none'" style="position:absolute; top:12px; right:16px; font-size:22px; background:none; border:none; cursor:pointer; color:var(--dark); line-height:1;">✕</button>
+      <h3 style="font-family:'ZCOOL KuaiLe',cursive; color:var(--dark); margin-bottom:16px; font-size:20px; padding-right:40px;">📋 费用明细（2人，7天）</h3>
+      <table style="width:100%; font-size:13px; border-collapse:collapse; color:var(--dark);">
+        <tr style="background:#FFF8E1; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 酒店（6晚，老城区/西工区，含早）</td>
+          <td style="text-align:right; font-weight:bold; border-bottom:1px solid #E0E0E0;">1800-2400元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D1 落地晚餐（西工小街小吃+牛肉汤，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~120元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D2 龙门+白马寺（午餐+晚餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D3 博物馆+关林+九洲池（水席+小吃，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D4 老君山（早餐+山上简餐+返程晚餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D5 明堂天堂+应天门（午餐+晚餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~220元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D6 丽景门+洛邑古城（水席正餐+小吃，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 餐饮小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~1500元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 D1 机场→酒店（打车，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~80元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 洛阳市内（打车+地铁，2人全程）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~270元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚌 D4 老君山往返（景区直通车/包车，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚄 D7 洛阳→郑州（高铁，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~150元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 交通小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~800元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 龙门石窟（成人100，儿童半价50）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 白马寺（成人35，儿童票约18）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">53元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 老君山（成人100，儿童半价50）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 老君山一级索道（成人80，儿童40）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">120元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 洛阳博物馆（免费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">0元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 关林（成人40，儿童半价20）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">60元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 明堂天堂（联票约90，儿童半价45）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">135元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 应天门（免费外观）+ 九洲池（免费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">0元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 丽景门（免费）+ 洛邑古城（免费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">0元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 门票小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~768元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px;">🛒 购物+零食+饮料</td>
+          <td style="text-align:right; font-weight:bold;">200-400元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:7px 6px;">🧮 小计（不含往返大交通）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">4600-5500元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold; border-top:2px solid var(--dark);">
+          <td style="padding:7px 6px;">✈️ 往返大交通（飞机，深圳✈️郑州/洛阳）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">800-1500元/人</td>
+        </tr>
+        <tr style="background:linear-gradient(135deg,#E53935,#FF8A65); color:white; font-weight:bold;">
+          <td style="padding:9px 6px; font-size:15px;">🎯 预估总计（2人，7天）</td>
+          <td style="text-align:right; font-size:19px;">6200-8000元</td>
+        </tr>
+      </table>
+      <div class="tip-box" style="margin-top:12px;">
+        <span class="tip-icon">👶</span>
+        <span><b>儿童票价（8岁）：</b>龙门石窟/白马寺/老君山/关林/明堂天堂均按6-12岁儿童票半价计算。大部分景点对6周岁以下或身高1.2米以下免费，8岁儿童需购儿童票。高铁/大巴超出1.2米需购票（儿童半价）。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">📊</span>
+        <span><b>行程覆盖：</b>本预算严格对应7日行程（D1落地→D2龙门+白马寺→D3博物馆+关林→D4老君山→D5隋唐洛阳城→D6水席夜游→D7返程），不含少林寺/白马寺周边（行程未安排）。洛阳→郑州高铁已单独计入，未重复计入市内交通。</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ====== 底部 ====== -->
+<footer class="poster-footer">
+  <h2>🏛️ 洛阳之旅 · 等你来 ❤️</h2>
+  <p>#洛阳旅行 #龙门石窟 #老君山 #洛阳水席 #隋唐洛阳城 #神都 #攻略</p>
+  <div class="footer-flowers">🌸</div>
+  <div class="footer-flowers">🌼</div>
+  <div class="footer-flowers">🌺</div>
+  <div class="footer-flowers">🌻</div>
+  <div class="footer-flowers">🌷</div>
+  <div class="footer-flowers">🌸</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.querySelectorAll('.carousel-wrap .swiper').forEach(function(el) {
+  new Swiper(el, {
+    loop: true,
+    pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
+    navigation: { nextEl: el.querySelector('.swiper-button-next'), prevEl: el.querySelector('.swiper-button-prev') },
+    autoplay: { delay: 3500, disableOnInteraction: false },
+  });
+});
+</script>
+
+</body>
+</html>

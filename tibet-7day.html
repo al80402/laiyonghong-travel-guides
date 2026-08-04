@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西藏7日旅行攻略</title>
+<meta property="og:title" content="西藏7日旅行攻略 | 拉萨亲子雪域之旅">
+<meta property="og:description" content="2人7日行程：拉萨→羊卓雍措→纳木错，含美食攻略、景点打卡、预算明细（约9200-12600元）">
+<meta property="og:image" content="https://laiyonghong.ddnsto.com/static/tibet_trip_cover.jpg">
+<meta property="og:url" content="https://laiyonghong.ddnsto.com/static/tibet-7day.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://laiyonghong.ddnsto.com/static/tibet_trip_cover.jpg" type="image/jpeg">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<style>
+  :root {
+    --sky: #87CEEB;
+    --grass: #7CB342;
+    --warm: #FFD54F;
+    --peach: #FFAB91;
+    --pink: #F48FB1;
+    --brown: #8D6E63;
+    --cream: #FFF8E1;
+    --dark: #4E342E;
+    --red: #E53935;
+    --green-dark: #558B2F;
+    --title-dark: #0D47A1;
+    --title-stroke: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  /* 描边字体 */
+  .stroke-text {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 2px var(--dark);
+    color: white;
+    text-shadow: 3px 3px 0px var(--dark);
+  }
+
+  .stroke-text-fill {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 1.5px var(--dark);
+    color: var(--warm);
+    text-shadow: 2px 2px 0px var(--dark);
+  }
+
+  /* 海报头部 */
+  .poster-header {
+    background: linear-gradient(180deg, #1565C0 0%, #42A5F5 30%, #90CAF9 55%, #E3F2FD 75%, #FFFFFF 100%);
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  /* 宫崎骏风格云朵 */
+  .cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  .cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+  }
+  .cloud-1 { width: 120px; height: 50px; top: 60px; left: 10%; animation: float 8s ease-in-out infinite; }
+  .cloud-1::before { width: 60px; height: 60px; top: -30px; left: 20px; }
+  .cloud-1::after { width: 80px; height: 50px; top: -20px; left: 50px; }
+  .cloud-2 { width: 160px; height: 60px; top: 100px; right: 15%; animation: float 10s ease-in-out infinite reverse; }
+  .cloud-2::before { width: 80px; height: 80px; top: -40px; left: 30px; }
+  .cloud-2::after { width: 100px; height: 60px; top: -25px; left: 60px; }
+  .cloud-3 { width: 100px; height: 40px; top: 40px; left: 40%; animation: float 6s ease-in-out infinite; }
+  .cloud-3::before { width: 50px; height: 50px; top: -25px; left: 15px; }
+  .cloud-3::after { width: 65px; height: 40px; top: -18px; left: 40px; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* 太阳 */
+  .sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #FFD54F, #FFB300);
+    border-radius: 50%;
+    top: 30px;
+    right: 10%;
+    box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300;
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300; }
+    50% { box-shadow: 0 0 80px #FFD54F, 0 0 140px #FFB300; }
+  }
+
+  /* 雪山 */
+  .mountains {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 220px;
+  }
+  .mountain {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  .mountain-1 {
+    border-width: 0 160px 180px 160px;
+    border-color: transparent transparent #E8EAF6 transparent;
+    left: -30px;
+  }
+  .mountain-1::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    border-width: 0 50px 60px 50px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  .mountain-2 {
+    border-width: 0 220px 210px 220px;
+    border-color: transparent transparent #C5CAE9 transparent;
+    left: 120px;
+  }
+  .mountain-2::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -65px;
+    border-width: 0 65px 75px 65px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  .mountain-3 {
+    border-width: 0 180px 170px 180px;
+    border-color: transparent transparent #E8EAF6 transparent;
+    right: -20px;
+  }
+  .mountain-3::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: -55px;
+    border-width: 0 55px 65px 55px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  .mountain-4 {
+    border-width: 0 130px 140px 130px;
+    border-color: transparent transparent #BBDEFB transparent;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mountain-4::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    border-width: 0 40px 50px 40px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  /* 小房子 */
+  .house {
+    position: absolute;
+    bottom: 80px;
+    left: 15%;
+  }
+  .house-body {
+    width: 60px;
+    height: 45px;
+    background: #FFF9C4;
+    border: 3px solid var(--dark);
+    position: relative;
+  }
+  .house-roof {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 35px solid var(--red);
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    border: 3px solid var(--dark);
+    border-top: none;
+  }
+  .house-door {
+    width: 18px;
+    height: 28px;
+    background: var(--brown);
+    border: 2px solid var(--dark);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px 2px 0 0;
+  }
+  .house-window {
+    width: 14px;
+    height: 14px;
+    background: #B3E5FC;
+    border: 2px solid var(--dark);
+    position: absolute;
+    top: 8px;
+    border-radius: 50%;
+  }
+  .house-window.left { left: 6px; }
+  .house-window.right { right: 6px; }
+
+  /* 小人物 */
+  .person {
+    position: absolute;
+    bottom: 60px;
+  }
+  .person-body {
+    width: 20px;
+    height: 25px;
+    background: var(--pink);
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+  }
+  .person-head {
+    width: 18px;
+    height: 18px;
+    background: #FFE0B2;
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+    margin: 0 auto 2px;
+  }
+  .person-1 { left: 25%; }
+  .person-2 { left: 28%; }
+  .person-3 { right: 20%; }
+
+  /* 花朵 */
+  .flower {
+    position: absolute;
+    bottom: 30px;
+    font-size: 24px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+  .flower:nth-child(1) { left: 5%; animation-delay: 0s; }
+  .flower:nth-child(2) { left: 12%; animation-delay: 0.5s; }
+  .flower:nth-child(3) { right: 8%; animation-delay: 1s; }
+  .flower:nth-child(4) { right: 15%; animation-delay: 1.5s; }
+  .flower:nth-child(5) { left: 35%; animation-delay: 0.3s; }
+
+  /* 蝴蝶 */
+  .butterfly {
+    position: absolute;
+    font-size: 20px;
+    animation: fly 12s linear infinite;
+  }
+  @keyframes fly {
+    0% { top: 200px; left: -50px; }
+    25% { top: 150px; }
+    50% { top: 180px; left: 50%; }
+    75% { top: 130px; }
+    100% { top: 200px; left: 110%; }
+  }
+
+  /* 标题区域 */
+  .title-area {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title-area::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10%;
+    right: -10%;
+    bottom: -20px;
+    background: rgba(13, 71, 161, 0.55);
+    border-radius: 24px;
+    z-index: -1;
+    backdrop-filter: blur(2px);
+  }
+  .title-area h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 88px;
+    color: var(--dark);
+    text-shadow:
+      -3px -3px 0 #FFF, 3px -3px 0 #FFF,
+      -3px 3px 0 #FFF, 3px 3px 0 #FFF,
+      -3px 0 0 #FFF, 3px 0 0 #FFF,
+      0 -3px 0 #FFF, 0 3px 0 #FFF,
+      4px 4px 0px rgba(0,0,0,0.2);
+    letter-spacing: 10px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .title-area .subtitle {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: var(--dark);
+    text-shadow:
+      -2px -2px 0 #FFF, 2px -2px 0 #FFF,
+      -2px 2px 0 #FFF, 2px 2px 0 #FFF,
+      -2px 0 0 #FFF, 2px 0 0 #FFF,
+      0 -2px 0 #FFF, 0 2px 0 #FFF,
+      3px 3px 0px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    letter-spacing: 6px;
+  }
+  .title-area .tagline {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    background: rgba(0,0,0,0.45);
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+  }
+
+  /* 美食emoji装饰 */
+  .food-deco {
+    position: absolute;
+    font-size: 40px;
+    z-index: 5;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+  }
+  .food-deco:nth-child(1) { top: 120px; left: 8%; animation-delay: 0s; }
+  .food-deco:nth-child(2) { top: 160px; right: 8%; animation-delay: 0.3s; }
+  .food-deco:nth-child(3) { top: 280px; left: 5%; animation-delay: 0.6s; }
+  .food-deco:nth-child(4) { top: 300px; right: 5%; animation-delay: 0.9s; }
+
+  /* 主内容 */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  /* 日程卡片 */
+  .day-card {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px var(--dark);
+    transition: transform 0.3s;
+  }
+  .day-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px var(--dark);
+  }
+
+  /* 卡片头部 */
+  .day-header {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 3px solid var(--dark);
+  }
+  .day-num {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 48px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    min-width: 80px;
+    text-align: center;
+  }
+  .day-date {
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.2);
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-top: 4px;
+  }
+  .day-info h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 24px;
+    color: var(--dark);
+    letter-spacing: 2px;
+  }
+  .day-info .route {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* 卡片内容 */
+  .day-body {
+    padding: 25px;
+  }
+  .section-title {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .icon {
+    font-size: 22px;
+  }
+
+  /* 景点标签 */
+  .spot-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .spot-tag {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* 美食标签 */
+  .food-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .food-tag {
+    background: #FFF3E0;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* Tips */
+  .tip-box {
+    background: #E8F5E9;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .tip-box .tip-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .tip-box-alt {
+    background: #FFF3E0;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .tip-box-alt .tip-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .tip-box-danger {
+    background: #FFEBEE;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .tip-box-danger .tip-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  /* 颜色主题 */
+  .theme-arrival .day-header { background: linear-gradient(135deg, #90CAF9, #64B5F6); }
+  .theme-potala .day-header { background: linear-gradient(135deg, #EF9A9A, #E57373); }
+  .theme-jokhang .day-header { background: linear-gradient(135deg, #CE93D8, #BA68C8); }
+  .theme-yamdrok .day-header { background: linear-gradient(135deg, #80DEEA, #4DD0E1); }
+  .theme-sera .day-header { background: linear-gradient(135deg, #A5D6A7, #81C784); }
+  .theme-freetime .day-header { background: linear-gradient(135deg, #FFF59D, #FFF176); }
+  .theme-depart .day-header { background: linear-gradient(135deg, #B39DDB, #9575CD); }
+
+  /* 天气预报 */
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .weather-panel {
+    border-radius: 16px;
+    padding: 18px;
+  }
+  .weather-panel h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .weather-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .weather-panel table th {
+    padding: 6px 4px;
+    text-align: center;
+    border-radius: 8px 0 0 0;
+  }
+  .weather-panel table th:last-child {
+    border-radius: 0 8px 0 0;
+  }
+  .weather-panel table td {
+    padding: 5px 4px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .weather-panel .weather-extra {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .weather-tip {
+    max-width: 900px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.8;
+    border: 1px solid #FFE0B2;
+  }
+  @media (max-width: 600px) {
+    .weather-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .weather-panel table {
+      font-size: 12px;
+    }
+    .weather-panel table th,
+    .weather-panel table td {
+      padding: 4px 2px;
+    }
+    .weather-tip {
+      margin-left: 12px;
+      margin-right: 12px;
+      padding: 12px 14px;
+      font-size: 12px;
+    }
+  }
+
+  /* 信息汇总 */
+  .info-section {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0px var(--dark);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .info-section h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 28px;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .info-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 18px;
+    text-align: center;
+  }
+  .info-card .info-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .info-card h3 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .info-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* 预算 */
+  .budget-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+  }
+  .budget-label {
+    font-size: 13px;
+    width: 60px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .budget-track {
+    flex: 1;
+    height: 16px;
+    background: #E0E0E0;
+    border-radius: 8px;
+    border: 2px solid var(--dark);
+    overflow: hidden;
+  }
+  .budget-fill {
+    height: 100%;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--grass), var(--warm));
+  }
+  .budget-value {
+    font-size: 13px;
+    width: 80px;
+    flex-shrink: 0;
+    font-weight: bold;
+  }
+
+  /* 底部 */
+  .poster-footer {
+    background: linear-gradient(180deg, #1565C0, #0D47A1);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .poster-footer h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    margin-bottom: 15px;
+  }
+  .poster-footer p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .footer-flowers {
+    position: absolute;
+    bottom: 10px;
+    font-size: 28px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  .footer-flowers:nth-child(1) { left: 10%; animation-delay: 0s; }
+  .footer-flowers:nth-child(2) { left: 25%; animation-delay: 0.5s; }
+  .footer-flowers:nth-child(3) { left: 40%; animation-delay: 1s; }
+  .footer-flowers:nth-child(4) { right: 40%; animation-delay: 1.5s; }
+  .footer-flowers:nth-child(5) { right: 25%; animation-delay: 0.3s; }
+  .footer-flowers:nth-child(6) { right: 10%; animation-delay: 0.8s; }
+
+  /* 装饰元素 */
+  .deco-line {
+    width: 60px;
+    height: 4px;
+    background: var(--warm);
+    border-radius: 2px;
+    margin: 15px 0;
+    border: 2px solid var(--dark);
+  }
+
+  /* 响应式 */
+  @media (max-width: 600px) {
+    .title-area h1 { font-size: 42px; letter-spacing: 4px; }
+    .title-area .subtitle { font-size: 18px; }
+    .day-num { font-size: 36px; min-width: 60px; }
+    .day-info h2 { font-size: 18px; }
+    .info-grid { grid-template-columns: 1fr; }
+  }
+
+  /* 景点轮播图 */
+  .carousel-wrap {
+    margin-bottom: 18px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid var(--dark);
+    box-shadow: 4px 4px 0px var(--dark);
+  }
+  .carousel-wrap .swiper {
+    width: 100%;
+    height: 160px;
+  }
+  .carousel-wrap .swiper-slide img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+  }
+  .carousel-wrap .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+    border: 2px solid var(--dark);
+  }
+  .carousel-wrap .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--red);
+    border-color: var(--dark);
+  }
+  .carousel-wrap .swiper-button-next,
+  .carousel-wrap .swiper-button-prev {
+    color: white;
+    background: rgba(0,0,0,0.35);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .carousel-wrap .swiper-button-next::after,
+  .carousel-wrap .swiper-button-prev::after {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* 高反警告横幅 */
+  .altitude-alert {
+    background: linear-gradient(135deg, #FFEBEE, #FFF3E0);
+    border: 3px solid var(--red);
+    border-radius: 20px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    box-shadow: 4px 4px 0px var(--red);
+  }
+  .altitude-alert h3 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 22px;
+    color: var(--red);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .altitude-alert ul {
+    list-style: none;
+    padding: 0;
+  }
+  .altitude-alert ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.6;
+  }
+  .altitude-alert ul li::before {
+    content: '⚠️';
+    flex-shrink: 0;
+  }
+</style>
+
+<link rel="canonical" href="https://laiyonghong.ddnsto.com/static/tibet-7day.html">
+
+<!-- WeChat Share Optimization -->
+<meta property="weixin:content:img_path" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body>
+
+<!-- ====== 海报头部 ====== -->
+<header class="poster-header">
+  <!-- 云朵 -->
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+  <!-- 太阳 -->
+  <div class="sun"></div>
+  <!-- 蝴蝶 -->
+  <div class="butterfly">🦋</div>
+  <!-- 美食装饰 -->
+  <div class="food-deco">🍵</div>
+  <div class="food-deco">🍜</div>
+  <div class="food-deco">🏔️</div>
+  <div class="food-deco">🙏</div>
+  <!-- 雪山 -->
+  <div class="mountains">
+    <div class="mountain mountain-1"></div>
+    <div class="mountain mountain-2"></div>
+    <div class="mountain mountain-3"></div>
+    <div class="mountain mountain-4"></div>
+  </div>
+  <!-- 花朵 -->
+  <div class="flower">🌸</div>
+  <div class="flower">🌼</div>
+  <div class="flower">🌺</div>
+  <div class="flower">🌻</div>
+  <div class="flower">🌷</div>
+  <!-- 房子 -->
+  <div class="house">
+    <div class="house-body">
+      <div class="house-roof"></div>
+      <div class="house-window left"></div>
+      <div class="house-window right"></div>
+      <div class="house-door"></div>
+    </div>
+  </div>
+  <!-- 人物 -->
+  <div class="person person-1">
+    <div class="person-head"></div>
+    <div class="person-body"></div>
+  </div>
+  <div class="person person-2">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#90CAF9"></div>
+  </div>
+  <div class="person person-3">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#FFF9C4"></div>
+  </div>
+  <!-- 标题 -->
+  <div class="title-area">
+    <h1>西藏7日游</h1>
+    <div class="subtitle">拉萨 × 羊卓雍措 · 雪域圣殿</div>
+    <div class="tagline">🏔️ 世界屋脊 · 心灵之旅 📋</div>
+    <div class="tagline" style="font-size:14px; opacity:0.9; margin-top:6px;">📌 2026年8月15日-21日 · 数据来源：网易旅行、今日头条、穷游等公开攻略</div>
+  </div>
+</header>
+
+<!-- ====== 天气预报 ====== -->
+<div class="info-section" style="margin-top:0;">
+  <h2>🌤️ 拉萨实时天气预报（数据来源：Open-Meteo）</h2>
+  <div class="weather-grid">
+    <div class="weather-panel" style="background:#E3F2FD;">
+      <h3 style="color:#0D47A1;">🏔️ 拉萨（8月15日-21日）</h3>
+      <table>
+        <tr style="background:#BBDEFB; color:#0D47A1;">
+          <th>日期</th><th>天气</th><th>温度</th><th>降水</th><th>UV</th>
+        </tr>
+        <tr><td>08/15 六</td><td>🌦毛毛雨</td><td>12~22°C</td><td>5mm</td><td>9.75</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/16 日</td><td>🌦毛毛雨</td><td>12~22°C</td><td>6mm</td><td>9.5</td></tr>
+        <tr><td>08/17 一</td><td>🌦毛毛雨</td><td>12~22°C</td><td>7mm</td><td>9.0</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/18 二</td><td>🌧中雨</td><td>11~20°C</td><td>11mm</td><td>6.3</td></tr>
+        <tr><td>08/19 三</td><td>🌦毛毛雨</td><td>12~21°C</td><td>8mm</td><td>8.5</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/20 四</td><td>⏳待确认</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>08/21 五</td><td>⏳待确认</td><td>—</td><td>—</td><td>—</td></tr>
+      </table>
+      <div class="weather-extra" style="color:#0D47A1;">☀️ UV最高9.75（极强）· 日出~日落 06:15-19:30 · 海拔3650m</div>
+    </div>
+  </div>
+  <div class="weather-tip" style="background:#FFF3E0; border-color:#FFE0B2;">
+    <strong>⚠️ 天气出行建议：</strong><br>
+    • <strong>D1（8/15）</strong>抵达拉萨当天有毛毛雨，气温12-22°C，注意保暖，抵达后务必休息适应高原<br>
+    • <strong>D2-D3</strong>拉萨持续阴雨，气温12-22°C，建议室内景点为主（布达拉宫、大昭寺），带足雨具<br>
+    • <strong>D4羊湖</strong>可能遇中雨，羊卓雍措海拔4441m，风大温低，务必穿冲锋衣+保暖层<br>
+    • <strong>紫外线极强</strong>（UV 9.75）！高原紫外线是平原2-3倍，SPF50+防晒霜+墨镜+帽子必备<br>
+    • 拉萨8月均温12-22°C，早晚温差大，需带厚外套/薄羽绒服
+  </div>
+</div>
+
+<!-- ====== 高反警告 ====== -->
+<div class="content">
+  <div class="altitude-alert">
+    <h3>🚨 高原反应重要警告</h3>
+    <ul>
+      <li>拉萨海拔3650米，羊卓雍措海拔4441米，纳木错海拔4718米，高反风险真实存在</li>
+      <li>抵达前1周开始服用红景天，抵达后48小时内避免洗澡、剧烈运动</li>
+      <li>儿童（8岁）高反风险更高，需密切观察：头痛、恶心、呼吸困难立即下撤</li>
+      <li>备好：乙酰唑胺（处方药）、布洛芬、葡萄糖、便携氧气瓶（拉萨到处可买）</li>
+      <li>如出现严重高反（肺水肿/脑水肿症状），立即送往拉萨人民医院（海拔最低医疗点）</li>
+      <li>航班建议选择傍晚抵达，便于白天适应，避免夜间缺氧加重</li>
+    </ul>
+  </div>
+
+  <!-- ====== 正文内容 ====== -->
+  <main class="content">
+
+  <!-- Day 1 -->
+  <div class="day-card theme-arrival">
+    <div class="day-header">
+      <div class="day-num">D1</div>
+      <div class="day-date">08/15 周六</div>
+      <div class="day-info">
+        <h2>🛫 抵达拉萨，适应高原</h2>
+        <div class="route">深圳✈️拉萨 → 酒店休息 → 八廓街 → 大昭寺外围</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🕌 八廓街</span>
+        <span class="spot-tag">🛕 大昭寺外围</span>
+        <span class="spot-tag">🙏 转经道</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍵 甜茶（加玛剧场旁茶馆）</span>
+        <span class="food-tag">🫓 藏饼</span>
+        <span class="food-tag">🍜 藏面</span>
+      </div>
+      <div class="tip-box-danger">
+        <span class="tip-icon">⚠️</span>
+        <span><b>第一天绝对不要洗澡！</b>高原反应高发期，好好休息，不要剧烈运动，多喝水，缓慢行动。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card theme-potala">
+    <div class="day-header">
+      <div class="day-num">D2</div>
+      <div class="day-date">08/16 周日</div>
+      <div class="day-info">
+        <h2>🏯 布达拉宫，世界之巅</h2>
+        <div class="route">布达拉宫 → 宗角禄康公园 → 药王山观景台</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day2-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/static/images/d2-potala.jpg" alt="布达拉宫"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏯 布达拉宫（200元）</span>
+        <span class="spot-tag">🌳 宗角禄康公园</span>
+        <span class="spot-tag">📷 药王山观景台（50元20元纸币背景）</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍵 甜茶</span>
+        <span class="food-tag">🍵 酥油茶</span>
+        <span class="food-tag">🫓 藏饼</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🎫</span>
+        <span><b>布达拉宫门票需提前预约！</b>成人200元，儿童（6-12岁）半价100元。每日限量8000张，建议提前3-5天在"布达拉宫门票预订"小程序抢票。</span>
+      </div>
+      <div class="tip-box-alt" style="margin-top:10px">
+        <span class="tip-icon">💡</span>
+        <span>药王山观景台是拍摄布达拉宫经典角度（20元人民币背景），建议下午前往光线最佳。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card theme-jokhang">
+    <div class="day-header">
+      <div class="day-num">D3</div>
+      <div class="day-date">08/17 周一</div>
+      <div class="day-info">
+        <h2>🛕 大昭寺·小昭寺·罗布林卡</h2>
+        <div class="route">大昭寺 → 小昭寺 → 罗布林卡</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🛕 大昭寺（85元）</span>
+        <span class="spot-tag">⛩️ 小昭寺</span>
+        <span class="spot-tag">🏞️ 罗布林卡（60元）</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍵 甜茶（光明港琼甜茶馆）</span>
+        <span class="food-tag">🫓 藏饼</span>
+        <span class="food-tag">🍜 藏面</span>
+        <span class="food-tag">🍲 牦牛火锅</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🛕</span>
+        <span>大昭寺是藏传佛教圣地，内部不可拍照。85元含儿童票（半价）。请保持安静，顺时针转经。</span>
+      </div>
+      <div class="tip-box-alt" style="margin-top:10px">
+        <span class="tip-icon">💡</span>
+        <span>光明港琼甜茶馆是本地人最爱，2元/杯甜茶超划算！罗布林卡是达赖喇嘛夏宫，园林很美。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card theme-yamdrok">
+    <div class="day-header">
+      <div class="day-num">D4</div>
+      <div class="day-date">08/18 周二</div>
+      <div class="day-info">
+        <h2>💎 羊卓雍措，天湖之旅</h2>
+        <div class="route">拉萨 → 拉萨河峡谷 → 卡若拉冰川 → 羊卓雍措 → 拉萨</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏞️ 羊卓雍措（60元）</span>
+        <span class="spot-tag">🏔️ 卡若拉冰川</span>
+        <span class="spot-tag">🏞️ 拉萨河峡谷</span>
+        <span class="spot-tag">🐑 高原牧群</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍲 牦牛火锅</span>
+        <span class="food-tag">🥣 糌粑</span>
+        <span class="food-tag">🍵 酥油茶</span>
+      </div>
+      <div class="tip-box-danger">
+        <span class="tip-icon">🏔️</span>
+        <span><b>羊卓雍措海拔4441米！</b>不要奔跑跳跃，不要洗澡，不要饮酒。包车往返约400-600元，建议早起出发（7点）避开云雾。</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <span class="tip-icon">🚗</span>
+        <span>全天包车（含司机）约500-700元，路程约200km，往返需6-7小时。路况良好但弯道多，晕车药必备。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card theme-sera">
+    <div class="day-header">
+      <div class="day-num">D5</div>
+      <div class="day-date">08/19 周三</div>
+      <div class="day-info">
+        <h2>🙏 色拉寺辩经 · 西藏博物馆</h2>
+        <div class="route">色拉寺（辩经）→ 西藏博物馆 → 冲赛康市场</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🙏 色拉寺（50元）</span>
+        <span class="spot-tag">🏛️ 西藏博物馆</span>
+        <span class="spot-tag">🛒 冲赛康市场</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍲 牦牛火锅</span>
+        <span class="food-tag">🫓 藏饼</span>
+        <span class="food-tag">🍜 藏面</span>
+        <span class="food-tag">🍵 酥油茶</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🙏</span>
+        <span>色拉寺辩经下午3:00-4:00举行（周一闭寺），免费观看！僧人激烈辩论是西藏最独特的文化体验。50元/人，儿童半价。</span>
+      </div>
+      <div class="tip-box-alt" style="margin-top:10px">
+        <span class="tip-icon">🛒</span>
+        <span>冲赛康市场是拉萨最大市场，可买藏香、唐卡、手串等纪念品，记得砍价！西藏博物馆免费，周一闭馆。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card theme-freetime">
+    <div class="day-header">
+      <div class="day-num">D6</div>
+      <div class="day-date">08/20 周四</div>
+      <div class="day-info">
+        <h2>🛍️ 自由活动 / 纳木错option · 八廓街购物</h2>
+        <div class="route">八廓街购物 → 自由活动</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🕌 八廓街</span>
+        <span class="spot-tag">🛕 大昭寺</span>
+        <span class="spot-tag">🏔️ 纳木错（option）</span>
+      </div>
+      <div class="section-title"><span class="icon">🍜</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍲 牦牛火锅</span>
+        <span class="food-tag">🥣 糌粑</span>
+        <span class="food-tag">🍵 甜茶</span>
+        <span class="food-tag">🍜 藏面</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>纳木错一日游需包车（约800-1000元），海拔4718米，距离拉萨约280km。如选纳木错，建议前一天晚上准备充分。</span>
+      </div>
+      <div class="tip-box-alt" style="margin-top:10px">
+        <span class="tip-icon">🛍️</span>
+        <span>八廓街是最佳购物地，藏香、唐卡、蜜蜡、绿松石均可淘。记忆藏纸、藏式饰品也很受欢迎。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-card theme-depart">
+    <div class="day-header">
+      <div class="day-num">D7</div>
+      <div class="day-date">08/21 周五</div>
+      <div class="day-info">
+        <h2>✈️ 满载而归</h2>
+        <div class="route">拉萨贡嘎机场 → 深圳</div>
+      </div>
+    </div>
+    <div class="day-body" style="text-align:center; padding:40px;">
+      <div style="font-size:64px; margin-bottom:15px;">🧳✈️💕</div>
+      <p style="font-family:'ZCOOL KuaiLe',cursive; font-size:20px; color:var(--dark);">雪域之旅，一生一次！</p>
+    </div>
+  </div>
+
+  <!-- 信息汇总 -->
+  <div class="info-section">
+    <h2>📋 实用信息汇总</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">🚗</div>
+        <h3>交通建议</h3>
+        <p>拉萨市内：打车/公交<br>羊湖/纳木错：包车（约500-800元/天）<br> flights：深圳✈️拉萨（高原航线）</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🏨</div>
+        <h3>住宿推荐</h3>
+        <p>布达拉宫/八廓街附近<br>推荐：新藏域国际酒店、曼兰达松<br>（高原酒店价格较高，提前预订）</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">⚠️</div>
+        <h3>注意事项</h3>
+        <p>1. 高反预防！红景天+乙酰唑胺<br>2. 防晒必备（UV 9.75）<br>3. 布达拉宫需提前预约<br>4. 尊重藏传佛教习俗</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🎫</div>
+        <h3>门票汇总</h3>
+        <p>布达拉宫：200元（儿童100）<br>大昭寺：85元（儿童42）<br>羊卓雍措：60元<br>罗布林卡：60元<br>色拉寺：50元（儿童25）</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 预算 -->
+  <div class="info-section">
+    <h2>💰 预算参考（2人：1成人 + 1儿童8岁）</h2>
+    <div style="text-align:center; margin-bottom:15px;">
+      <span style="font-size:13px; color:#888; background:#FFF8E1; padding:4px 12px; border-radius:20px; border:1px solid #FFD54F;">
+        📌 数据来源：网易旅行、穷游网、马蜂窝等公开攻略；门票为2025年官方参考价
+      </span>
+    </div>
+    <div style="max-width:600px; margin:0 auto;">
+      <div class="budget-bar">
+        <span class="budget-label">🏨 住宿</span>
+        <div class="budget-track"><div class="budget-fill" style="width:42%"></div></div>
+        <span class="budget-value">2400-3600元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🍜 餐饮</span>
+        <div class="budget-track"><div class="budget-fill" style="width:18%"></div></div>
+        <span class="budget-value">~1600元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚕 市内交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:9%"></div></div>
+        <span class="budget-value">~800元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">✈️ 城际交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:4%"></div></div>
+        <span class="budget-value">~300元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🎫 门票</span>
+        <div class="budget-track"><div class="budget-fill" style="width:7%"></div></div>
+        <span class="budget-value">~650元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">💊 抗高反药</span>
+        <div class="budget-track"><div class="budget-fill" style="width:1%"></div></div>
+        <span class="budget-value">~100元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🛒 购物</span>
+        <div class="budget-track"><div class="budget-fill" style="width:4%"></div></div>
+        <span class="budget-value">300-500元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:15px; padding-top:15px; border-top:2px dashed var(--dark);">
+        <span class="budget-label" style="font-weight:bold;">💵 小计（不含大交通）</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red);">6200-7600元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px;">
+        <span class="budget-label">✈️ 大交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:50%; background:linear-gradient(90deg,#90CAF9,#64B5F6);"></div></div>
+        <span class="budget-value">1500-2500元/人</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px; padding-top:12px; border-top:3px double var(--dark);">
+        <span class="budget-label" style="font-size:15px; font-weight:bold;">🎯 预估总计</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#E53935,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red); font-size:18px;">9200-12600元</span>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:18px;">
+      <button onclick="document.getElementById('budgetModal').style.display='flex'" style="font-family:'ZCOOL KuaiLe',cursive; font-size:16px; padding:10px 28px; border-radius:30px; border:3px solid var(--dark); background:var(--warm); color:var(--dark); cursor:pointer; box-shadow:3px 3px 0px var(--dark); transition:all 0.15s;" onmouseover="this.style.background='#FFD54F'; this.style.transform='translate(-1px,-1px)'; this.style.boxShadow='4px 4px 0px var(--dark)';" onmouseout="this.style.background='#FFD54F'; this.style.transform='translate(0,0)'; this.style.boxShadow='3px 3px 0px var(--dark)';">📋 点击查看费用明细</button>
+    </div>
+  </div>
+
+  <!-- 弹窗 -->
+  <div id="budgetModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.55); align-items:center; justify-content:center; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:white; border-radius:20px; border:4px solid var(--dark); padding:28px 30px; max-width:640px; width:100%; max-height:85vh; overflow-y:auto; box-shadow:6px 6px 0px var(--dark); position:relative;">
+      <button onclick="document.getElementById('budgetModal').style.display='none'" style="position:absolute; top:12px; right:16px; font-size:22px; background:none; border:none; cursor:pointer; color:var(--dark); line-height:1;">✕</button>
+      <h3 style="font-family:'ZCOOL KuaiLe',cursive; color:var(--dark); margin-bottom:16px; font-size:20px; padding-right:40px;">📋 费用明细（2人，7天）</h3>
+      <table style="width:100%; font-size:13px; border-collapse:collapse; color:var(--dark);">
+        <tr style="background:#E3F2FD; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 酒店（6晚，拉萨八廓街附近，含早）</td>
+          <td style="text-align:right; font-weight:bold; border-bottom:1px solid #E0E0E0;">2400-3600元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D1拉萨（抵达后甜茶+藏饼，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~80元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D2布达拉宫周边（甜茶+藏面，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~120元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D3大昭寺+罗布林卡（牦牛火锅+甜茶，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~280元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D4羊湖包车（含午餐干粮+酥油茶，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D5色拉寺+博物馆（牦牛火锅+藏面，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D6自由活动（八廓街购物+用餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D7返程（机场餐+路途简餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~150元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 餐饮小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~1600元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 D1 机场→酒店（打车，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~80元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 D2-D3 市内打车/公交（4天）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚗 D4 羊湖包车往返（含司机，1天）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~600元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 D5-D6 市内交通（打车+公交，2天）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 D7 酒店→机场（打车，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~80元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 交通小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~1110元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 布达拉宫（成人200，儿童100）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 大昭寺（成人85，儿童42）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">127元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 羊卓雍措（成人60，儿童免费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">60元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 罗布林卡（成人60，儿童30）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">90元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 色拉寺（成人50，儿童25）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">75元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 小昭寺（免费）+ 药王山观景台（20元）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">20元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 西藏博物馆（免费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">0元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 门票小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~672元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">💊 红景天+乙酰唑胺+葡萄糖+氧气瓶</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~100元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🛒 购物+纪念品（藏香/唐卡/手串）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">300-500元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:7px 6px;">🧮 小计（不含往返大交通）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">6200-7600元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold; border-top:2px solid var(--dark);">
+          <td style="padding:7px 6px;">✈️ 往返大交通（飞机，深圳✈️拉萨）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">1500-2500元/人</td>
+        </tr>
+        <tr style="background:linear-gradient(135deg,#E53935,#FF8A65); color:white; font-weight:bold;">
+          <td style="padding:9px 6px; font-size:15px;">🎯 预估总计（2人，7天）</td>
+          <td style="text-align:right; font-size:19px;">9200-12600元</td>
+        </tr>
+      </table>
+      <div class="tip-box" style="margin-top:12px;">
+        <span class="tip-icon">👶</span>
+        <span><b>儿童票价（8岁）：</b>布达拉宫/大昭寺/罗布林卡/色拉寺按6-12岁儿童票半价计算。羊卓雍措对1.2米以下儿童免费（8岁儿童通常需购票，但实际执行较宽松）。高铁/飞机超出1.2米需购票。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">📊</span>
+        <span><b>行程覆盖：</b>本预算严格对应7日行程（D1抵达→D2布达拉宫→D3大昭寺+罗布林卡→D4羊湖→D5色拉寺+博物馆→D6自由活动→D7返程），不含纳木错（如选择需额外增加800-1000元）。深圳✈️拉萨高原航线价格较高，建议提前2-3周购票。</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ====== 底部 ====== -->
+<footer class="poster-footer">
+  <h2>🏔️ 雪域之旅 · 等你来 ❤️</h2>
+  <p>#西藏旅行 #拉萨旅行 #布达拉宫 #羊卓雍措 #亲子攻略 #雪域圣殿</p>
+  <div class="footer-flowers">🌸</div>
+  <div class="footer-flowers">🌼</div>
+  <div class="footer-flowers">🌺</div>
+  <div class="footer-flowers">🌻</div>
+  <div class="footer-flowers">🌷</div>
+  <div class="footer-flowers">🌸</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.querySelectorAll('.carousel-wrap .swiper').forEach(function(el) {
+  new Swiper(el, {
+    loop: true,
+    pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
+    navigation: { nextEl: el.querySelector('.swiper-button-next'), prevEl: el.querySelector('.swiper-button-prev') },
+    autoplay: { delay: 3500, disableOnInteraction: false },
+  });
+});
+</script>
+
+</body>
+</html>

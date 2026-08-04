@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青海7日旅行攻略</title>
+<meta property="og:title" content="青海7日旅行攻略 | 西宁×青海湖×茶卡盐湖亲子高原之旅">
+<meta property="og:description" content="2人7日行程：西宁→青海湖→茶卡盐湖→祁连→张掖丹霞，含美食攻略、景点打卡、预算明细（约7600-10000元）">
+<meta property="og:image" content="https://laiyonghong.ddnsto.com/static/qinghai_trip_cover.jpg">
+<meta property="og:url" content="https://laiyonghong.ddnsto.com/static/qinghai-7day.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://laiyonghong.ddnsto.com/static/qinghai_trip_cover.jpg" type="image/jpeg">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<style>
+  :root {
+    --sky: #87CEEB;
+    --grass: #7CB342;
+    --warm: #FFD54F;
+    --peach: #FFAB91;
+    --pink: #F48FB1;
+    --brown: #8D6E63;
+    --cream: #FFF8E1;
+    --dark: #4E342E;
+    --red: #E53935;
+    --green-dark: #558B2F;
+    --title-dark: #0D47A1;
+    --title-stroke: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  /* 描边字体 */
+  .stroke-text {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 2px var(--dark);
+    color: white;
+    text-shadow: 3px 3px 0px var(--dark);
+  }
+
+  .stroke-text-fill {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 1.5px var(--dark);
+    color: var(--warm);
+    text-shadow: 2px 2px 0px var(--dark);
+  }
+
+  /* 海报头部 */
+  .poster-header {
+    background: linear-gradient(180deg, #87CEEB 0%, #B2EBF2 30%, #A5D6A7 60%, #7CB342 100%);
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  /* 宫崎骏风格云朵 */
+  .cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  .cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+  }
+  .cloud-1 { width: 120px; height: 50px; top: 60px; left: 10%; animation: float 8s ease-in-out infinite; }
+  .cloud-1::before { width: 60px; height: 60px; top: -30px; left: 20px; }
+  .cloud-1::after { width: 80px; height: 50px; top: -20px; left: 50px; }
+  .cloud-2 { width: 160px; height: 60px; top: 100px; right: 15%; animation: float 10s ease-in-out infinite reverse; }
+  .cloud-2::before { width: 80px; height: 80px; top: -40px; left: 30px; }
+  .cloud-2::after { width: 100px; height: 60px; top: -25px; left: 60px; }
+  .cloud-3 { width: 100px; height: 40px; top: 40px; left: 40%; animation: float 6s ease-in-out infinite; }
+  .cloud-3::before { width: 50px; height: 50px; top: -25px; left: 15px; }
+  .cloud-3::after { width: 65px; height: 40px; top: -18px; left: 40px; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* 太阳 */
+  .sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #FFD54F, #FFB300);
+    border-radius: 50%;
+    top: 30px;
+    right: 10%;
+    box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300;
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300; }
+    50% { box-shadow: 0 0 80px #FFD54F, 0 0 140px #FFB300; }
+  }
+
+  /* 山丘 */
+  .hills {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+  }
+  .hill {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .hill-1 { width: 400px; height: 180px; background: #689F38; left: -50px; }
+  .hill-2 { width: 500px; height: 200px; background: #7CB342; left: 200px; }
+  .hill-3 { width: 450px; height: 160px; background: #8BC34A; right: -50px; }
+  .hill-4 { width: 300px; height: 120px; background: #9CCC65; left: 50%; transform: translateX(-50%); }
+
+  /* 湖泊 */
+  .lake {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 50px;
+    background: radial-gradient(ellipse, #81D4FA, #4FC3F7, #29B6F6);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: shimmer 4s ease-in-out infinite;
+  }
+  @keyframes shimmer {
+    0%, 100% { opacity: 0.6; transform: translateX(-50%) scaleX(1); }
+    50% { opacity: 0.8; transform: translateX(-50%) scaleX(1.05); }
+  }
+
+  /* 小房子 */
+  .house {
+    position: absolute;
+    bottom: 80px;
+    left: 15%;
+  }
+  .house-body {
+    width: 60px;
+    height: 45px;
+    background: #FFF9C4;
+    border: 3px solid var(--dark);
+    position: relative;
+  }
+  .house-roof {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 35px solid var(--red);
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    border: 3px solid var(--dark);
+    border-top: none;
+  }
+  .house-door {
+    width: 18px;
+    height: 28px;
+    background: var(--brown);
+    border: 2px solid var(--dark);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px 2px 0 0;
+  }
+  .house-window {
+    width: 14px;
+    height: 14px;
+    background: #B3E5FC;
+    border: 2px solid var(--dark);
+    position: absolute;
+    top: 8px;
+    border-radius: 50%;
+  }
+  .house-window.left { left: 6px; }
+  .house-window.right { right: 6px; }
+
+  /* 小人物 */
+  .person {
+    position: absolute;
+    bottom: 60px;
+  }
+  .person-body {
+    width: 20px;
+    height: 25px;
+    background: var(--pink);
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+  }
+  .person-head {
+    width: 18px;
+    height: 18px;
+    background: #FFE0B2;
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+    margin: 0 auto 2px;
+  }
+  .person-1 { left: 25%; }
+  .person-2 { left: 28%; }
+  .person-3 { right: 20%; }
+
+  /* 花朵 */
+  .flower {
+    position: absolute;
+    bottom: 30px;
+    font-size: 24px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+  .flower:nth-child(1) { left: 5%; animation-delay: 0s; }
+  .flower:nth-child(2) { left: 12%; animation-delay: 0.5s; }
+  .flower:nth-child(3) { right: 8%; animation-delay: 1s; }
+  .flower:nth-child(4) { right: 15%; animation-delay: 1.5s; }
+  .flower:nth-child(5) { left: 35%; animation-delay: 0.3s; }
+
+  /* 蝴蝶 */
+  .butterfly {
+    position: absolute;
+    font-size: 20px;
+    animation: fly 12s linear infinite;
+  }
+  @keyframes fly {
+    0% { top: 200px; left: -50px; }
+    25% { top: 150px; }
+    50% { top: 180px; left: 50%; }
+    75% { top: 130px; }
+    100% { top: 200px; left: 110%; }
+  }
+
+  /* 标题区域 */
+  .title-area {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title-area::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10%;
+    right: -10%;
+    bottom: -20px;
+    background: rgba(13, 71, 161, 0.55);
+    border-radius: 24px;
+    z-index: -1;
+    backdrop-filter: blur(2px);
+  }
+  .title-area h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 88px;
+    color: var(--dark);
+    text-shadow:
+      -3px -3px 0 #FFF, 3px -3px 0 #FFF,
+      -3px 3px 0 #FFF, 3px 3px 0 #FFF,
+      -3px 0 0 #FFF, 3px 0 0 #FFF,
+      0 -3px 0 #FFF, 0 3px 0 #FFF,
+      4px 4px 0px rgba(0,0,0,0.2);
+    letter-spacing: 10px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .title-area .subtitle {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: var(--dark);
+    text-shadow:
+      -2px -2px 0 #FFF, 2px -2px 0 #FFF,
+      -2px 2px 0 #FFF, 2px 2px 0 #FFF,
+      -2px 0 0 #FFF, 2px 0 0 #FFF,
+      0 -2px 0 #FFF, 0 2px 0 #FFF,
+      3px 3px 0px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    letter-spacing: 6px;
+  }
+  .title-area .tagline {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    background: rgba(0,0,0,0.45);
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+  }
+
+  /* 美食emoji装饰 */
+  .food-deco {
+    position: absolute;
+    font-size: 40px;
+    z-index: 5;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+  }
+  .food-deco:nth-child(1) { top: 120px; left: 8%; animation-delay: 0s; }
+  .food-deco:nth-child(2) { top: 160px; right: 8%; animation-delay: 0.3s; }
+  .food-deco:nth-child(3) { top: 280px; left: 5%; animation-delay: 0.6s; }
+  .food-deco:nth-child(4) { top: 300px; right: 5%; animation-delay: 0.9s; }
+
+  /* 主内容 */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  /* 日程卡片 */
+  .day-card {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px var(--dark);
+    transition: transform 0.3s;
+  }
+  .day-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px var(--dark);
+  }
+
+  /* 卡片头部 */
+  .day-header {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 3px solid var(--dark);
+  }
+  .day-num {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 48px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    min-width: 80px;
+    text-align: center;
+  }
+  .day-date {
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.2);
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-top: 4px;
+  }
+  .day-info h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 24px;
+    color: var(--dark);
+    letter-spacing: 2px;
+  }
+  .day-info .route {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* 卡片内容 */
+  .day-body {
+    padding: 25px;
+  }
+  .section-title {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .icon {
+    font-size: 22px;
+  }
+
+  /* 景点标签 */
+  .spot-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .spot-tag {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* 美食标签 */
+  .food-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .food-tag {
+    background: #FFF3E0;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* Tips */
+  .tip-box {
+    background: #E8F5E9;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .tip-box .tip-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  /* 颜色主题 */
+  .theme-xining .day-header { background: linear-gradient(135deg, #80DEEA, #4DD0E1); }
+  .theme-qinghai .day-header { background: linear-gradient(135deg, #81D4FA, #29B6F6); }
+  .theme-chaka .day-header { background: linear-gradient(135deg, #E1BEE7, #AB47BC); }
+  .theme-qilian .day-header { background: linear-gradient(135deg, #A5D6A7, #66BB6A); }
+  .theme-zhangye .day-header { background: linear-gradient(135deg, #FFCC80, #FFA726); }
+  .theme-塔尔寺 .day-header { background: linear-gradient(135deg, #EF9A9A, #EF5350); }
+  .theme-return .day-header { background: linear-gradient(135deg, #B39DDB, #7E57C2); }
+
+  /* 天气预报 */
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .weather-panel {
+    border-radius: 16px;
+    padding: 18px;
+  }
+  .weather-panel h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .weather-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .weather-panel table th {
+    padding: 6px 4px;
+    text-align: center;
+    border-radius: 8px 0 0 0;
+  }
+  .weather-panel table th:last-child {
+    border-radius: 0 8px 0 0;
+  }
+  .weather-panel table td {
+    padding: 5px 4px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .weather-panel .weather-extra {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .weather-tip {
+    max-width: 900px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.8;
+    border: 1px solid #FFE0B2;
+  }
+  @media (max-width: 600px) {
+    .weather-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .weather-panel table {
+      font-size: 12px;
+    }
+    .weather-panel table th,
+    .weather-panel table td {
+      padding: 4px 2px;
+    }
+    .weather-tip {
+      margin-left: 12px;
+      margin-right: 12px;
+      padding: 12px 14px;
+      font-size: 12px;
+    }
+  }
+
+  /* 信息汇总 */
+  .info-section {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0px var(--dark);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .info-section h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 28px;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .info-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 18px;
+    text-align: center;
+  }
+  .info-card .info-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .info-card h3 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .info-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* 预算 */
+  .budget-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+  }
+  .budget-label {
+    font-size: 13px;
+    width: 60px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .budget-track {
+    flex: 1;
+    height: 16px;
+    background: #E0E0E0;
+    border-radius: 8px;
+    border: 2px solid var(--dark);
+    overflow: hidden;
+  }
+  .budget-fill {
+    height: 100%;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--grass), var(--warm));
+  }
+  .budget-value {
+    font-size: 13px;
+    width: 80px;
+    flex-shrink: 0;
+    font-weight: bold;
+  }
+
+  /* 底部 */
+  .poster-footer {
+    background: linear-gradient(180deg, #7CB342, #558B2F);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .poster-footer h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    margin-bottom: 15px;
+  }
+  .poster-footer p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .footer-flowers {
+    position: absolute;
+    bottom: 10px;
+    font-size: 28px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  .footer-flowers:nth-child(1) { left: 10%; animation-delay: 0s; }
+  .footer-flowers:nth-child(2) { left: 25%; animation-delay: 0.5s; }
+  .footer-flowers:nth-child(3) { left: 40%; animation-delay: 1s; }
+  .footer-flowers:nth-child(4) { right: 40%; animation-delay: 1.5s; }
+  .footer-flowers:nth-child(5) { right: 25%; animation-delay: 0.3s; }
+  .footer-flowers:nth-child(6) { right: 10%; animation-delay: 0.8s; }
+
+  /* 装饰元素 */
+  .deco-line {
+    width: 60px;
+    height: 4px;
+    background: var(--warm);
+    border-radius: 2px;
+    margin: 15px 0;
+    border: 2px solid var(--dark);
+  }
+
+  /* 响应式 */
+  @media (max-width: 600px) {
+    .title-area h1 { font-size: 42px; letter-spacing: 4px; }
+    .title-area .subtitle { font-size: 18px; }
+    .day-num { font-size: 36px; min-width: 60px; }
+    .day-info h2 { font-size: 18px; }
+    .info-grid { grid-template-columns: 1fr; }
+  }
+
+  /* 景点轮播图 */
+  .carousel-wrap {
+    margin-bottom: 18px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid var(--dark);
+    box-shadow: 4px 4px 0px var(--dark);
+  }
+  .carousel-wrap .swiper {
+    width: 100%;
+    height: 160px;
+  }
+  .carousel-wrap .swiper-slide img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+  }
+  .carousel-wrap .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+    border: 2px solid var(--dark);
+  }
+  .carousel-wrap .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--red);
+    border-color: var(--dark);
+  }
+  .carousel-wrap .swiper-button-next,
+  .carousel-wrap .swiper-button-prev {
+    color: white;
+    background: rgba(0,0,0,0.35);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .carousel-wrap .swiper-button-next::after,
+  .carousel-wrap .swiper-button-prev::after {
+    font-size: 14px;
+    font-weight: bold;
+  }
+</style>
+
+<link rel="canonical" href="https://laiyonghong.ddnsto.com/static/qinghai-7day.html">
+
+<!-- WeChat Share Optimization -->
+<meta property="weixin:content:img_path" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body>
+
+<!-- ====== 海报头部 ====== -->
+<header class="poster-header">
+  <!-- 云朵 -->
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+  <!-- 太阳 -->
+  <div class="sun"></div>
+  <!-- 蝴蝶 -->
+  <div class="butterfly">🦋</div>
+  <!-- 美食装饰 -->
+  <div class="food-deco">🍖</div>
+  <div class="food-deco">🐑</div>
+  <div class="food-deco">🏔️</div>
+  <div class="food-deco">🌾</div>
+  <!-- 山丘 -->
+  <div class="hills">
+    <div class="hill hill-1"></div>
+    <div class="hill hill-2"></div>
+    <div class="hill hill-3"></div>
+    <div class="hill hill-4"></div>
+  </div>
+  <!-- 湖泊 -->
+  <div class="lake"></div>
+  <!-- 花朵 -->
+  <div class="flower">🌸</div>
+  <div class="flower">🌼</div>
+  <div class="flower">🌺</div>
+  <div class="flower">🌻</div>
+  <div class="flower">🌷</div>
+  <!-- 房子 -->
+  <div class="house">
+    <div class="house-body">
+      <div class="house-roof"></div>
+      <div class="house-window left"></div>
+      <div class="house-window right"></div>
+      <div class="house-door"></div>
+    </div>
+  </div>
+  <!-- 人物 -->
+  <div class="person person-1">
+    <div class="person-head"></div>
+    <div class="person-body"></div>
+  </div>
+  <div class="person person-2">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#90CAF9"></div>
+  </div>
+  <div class="person person-3">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#FFF9C4"></div>
+  </div>
+  <!-- 标题 -->
+  <div class="title-area">
+    <h1>青海7日游</h1>
+    <div class="subtitle">西宁 × 青海湖 × 茶卡盐湖</div>
+    <div class="tagline">🏔️ 高原秘境 · 天空之镜 · 花海金波 📋</div>
+    <div class="tagline" style="font-size:14px; opacity:0.9; margin-top:6px;">📌 2026年8月15日-21日 · 数据来源：网络公开攻略</div>
+  </div>
+</header>
+
+<!-- ====== 天气预报 ====== -->
+<div class="info-section" style="margin-top:0;">
+  <h2>🌤️ 实时天气预报（数据来源：Open-Meteo）</h2>
+
+  <div class="weather-grid">
+    <!-- 西宁 -->
+    <div class="weather-panel" style="background:#E3F2FD;">
+      <h3 style="color:#1565C0;">🏔️ 西宁（8月15日-19日）</h3>
+      <table>
+        <tr style="background:#BBDEFB; color:#0D47A1;">
+          <th>日期</th><th>天气</th><th>温度</th><th>降水</th><th>UV</th>
+        </tr>
+        <tr><td>08/15 六</td><td>⛅ 多云转阴</td><td>10~27°C</td><td>0mm</td><td>4.85</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/16 日</td><td>🌦 小雨</td><td>12~24°C</td><td>7.5mm</td><td>5.2</td></tr>
+        <tr><td>08/17 一</td><td>🌧 中雨</td><td>11~23°C</td><td>5.0mm</td><td>5.8</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/18 二</td><td>⛅ 多云</td><td>13~26°C</td><td>0mm</td><td>7.65</td></tr>
+        <tr><td>08/19 三</td><td>☀️ 晴</td><td>14~27°C</td><td>0mm</td><td>6.5</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/20 四</td><td>⏳ 待确认</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>08/21 五</td><td>⏳ 待确认</td><td>—</td><td>—</td><td>—</td></tr>
+      </table>
+      <div class="weather-extra" style="color:#1565C0;">☀️ UV最高7.65（强）· 日出~日落 06:10-19:30</div>
+    </div>
+  </div>
+  <div class="weather-tip" style="background:#FFF8E1; border-color:#FFE0B2;">
+    <strong>⚠️ 天气出行建议：</strong><br>
+    • <strong>高原温差大</strong>：西宁日间27°C/夜间10°C，早晚务必穿外套，孩子备冲锋衣<br>
+    • <strong>D2-D3（8/16-17）</strong>青海湖/茶卡盐湖有雨，但茶卡盐湖遇雨反而更容易看到"天空之镜"效果，注意防雨保暖<br>
+    • <strong>D4（8/18）</strong>转多云，门源油菜花海正值盛花期，光线柔和拍照最佳<br>
+    • <strong>紫外线极强</strong>（UV 7.65），高原紫外线远超平原，务必涂高倍数防晒霜、戴帽子墨镜<br>
+    • <strong>海拔提示</strong>：西宁2200m，青海湖3200m，部分游客可能有轻微高原反应，建议行动放缓、避免剧烈运动
+  </div>
+</div>
+
+<!-- ====== 正文内容 ====== -->
+<main class="content">
+
+  <!-- Day 1 -->
+  <div class="day-card theme-xining">
+    <div class="day-header">
+      <div class="day-num">D1</div>
+      <div class="day-date">08/15 周六</div>
+      <div class="day-info">
+        <h2>🎒 抵达西宁</h2>
+        <div class="route">深圳✈️西宁 → 酒店休息 → 东关清真大寺 → 莫家街美食街</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="section-title"><span class="icon">🕌</span> 打卡景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🕌 东关清真大寺</span>
+        <span class="spot-tag">🌙 西宁夜景</span>
+      </div>
+      <div class="section-title"><span class="icon">🍢</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍜 酿皮</span>
+        <span class="food-tag">🧃 甜醅</span>
+        <span class="food-tag">🥛 酸奶</span>
+        <span class="food-tag">🍖 手抓羊肉</span>
+        <span class="food-tag">🥟 羊肉汤</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>第一天抵达别安排太满，好好休息适应高原环境！莫家街是西宁最热闹的美食街，先吃饱再睡觉~</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card theme-qinghai">
+    <div class="day-header">
+      <div class="day-num">D2</div>
+      <div class="day-date">08/16 周日</div>
+      <div class="day-info">
+        <h2>💙 青海湖环湖</h2>
+        <div class="route">西宁 → 青海湖环湖西路 → 鸟岛 → 入住湖边</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day2-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/static/images/d2-qinghai-lake.jpg" alt="青海湖"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">💙 青海湖环湖西路</span>
+        <span class="spot-tag">🐦 鸟岛</span>
+        <span class="spot-tag">🌅 日落观湖</span>
+      </div>
+      <div class="section-title"><span class="icon">🍖</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍲 牦牛火锅</span>
+        <span class="food-tag">🥩 手抓羊肉</span>
+        <span class="food-tag">🥣 炕羊排</span>
+        <span class="food-tag">🥛 牦牛酸奶</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">⚠️</span>
+        <span>青海湖海拔约3200m，注意高原反应！行动放缓，避免剧烈运动。8月湖区夜间温度仅10°C左右，务必带外套！下雨也有雨中的美。</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px;">
+        <span class="tip-icon">🎫</span>
+        <span>青海湖门票约100元/人，儿童6-12岁半价。鸟岛每年6-7月为最佳观鸟期，8月仍有候鸟，可凭兴趣决定是否进入。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card theme-chaka">
+    <div class="day-header">
+      <div class="day-num">D3</div>
+      <div class="day-date">08/17 周一</div>
+      <div class="day-info">
+        <h2>🪞 茶卡盐湖天空之镜</h2>
+        <div class="route">青海湖 → 茶卡盐湖 → 返回西宁</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day3-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/static/images/d3-chaka-salt.jpg" alt="茶卡盐湖"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🪞 天空之镜</span>
+        <span class="spot-tag">🚂 小火车</span>
+        <span class="spot-tag">🧂 盐雕</span>
+      </div>
+      <div class="section-title"><span class="icon">🍽️</span> 沿途美食</div>
+      <div class="food-tags">
+        <span class="food-tag">🥤 青稞酒</span>
+        <span class="food-tag">🍖 烤羊排</span>
+        <span class="food-tag">🥛 酸奶</span>
+        <span class="food-tag">🍞 青稞饼</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>茶卡盐湖遇雨后水面更平静，天空之镜效果更佳！建议穿红色/白色裙子拍照超美~小火车可坐到湖心，省力又出片！</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px;">
+        <span class="tip-icon">🎫</span>
+        <span>茶卡盐湖门票约60元/人，儿童半价。建议游览2-3小时，天气好时湖面如镜，倒影绝美。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card theme-qilian">
+    <div class="day-header">
+      <div class="day-num">D4</div>
+      <div class="day-date">08/18 周二</div>
+      <div class="day-info">
+        <h2>🌾 祁连卓尔山·门源花海</h2>
+        <div class="route">西宁 → 祁连卓尔山 → 门源油菜花海 → 入住祁连</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day4-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/static/images/d4-qilian-flowers.jpg" alt="门源油菜花海"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">⛰️ 卓尔山</span>
+        <span class="spot-tag">🌻 门源油菜花海</span>
+        <span class="spot-tag">🏔️ 祁连雪山</span>
+      </div>
+      <div class="section-title"><span class="icon">🍖</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🥩 手抓羊肉</span>
+        <span class="food-tag">🥣 牦牛火锅</span>
+        <span class="food-tag">🧃 甜醅</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🌻</span>
+        <span>门源油菜花海7月底-8月中是盛花期，8月依然金黄灿烂！卓尔山海拔约3000m，有栈道可登山观景，视野极佳。建议带足饮用水和零食。</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px;">
+        <span class="tip-icon">🎫</span>
+        <span>卓尔山门票约50元/人，门源油菜花海免费观赏。景区较大，建议游览3-4小时。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card theme-zhangye">
+    <div class="day-header">
+      <div class="day-num">D5</div>
+      <div class="day-date">08/19 周三</div>
+      <div class="day-info">
+        <h2>🎨 张掖丹霞</h2>
+        <div class="route">祁连 → 张掖丹霞国家地质公园 → 返回西宁</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day5-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/static/images/d5-zhangye-danxia.jpg" alt="张掖丹霞"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">🎨</span> 必游景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🌈 七彩丹霞</span>
+        <span class="spot-tag">🏜️ 丹霞地貌观景台</span>
+        <span class="spot-tag">📸 日落观景台</span>
+      </div>
+      <div class="section-title"><span class="icon">🍽️</span> 沿途美食</div>
+      <div class="food-tags">
+        <span class="food-tag">🍜 兰州拉面</span>
+        <span class="food-tag">🥟 搓鱼子</span>
+        <span class="food-tag">🍖 手抓羊肉</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🌅</span>
+        <span>张掖丹霞位于甘肃张掖，距西宁约3小时车程，为甘肃与青海交界区域。日落时分光影最震撼！建议下午前往，拍落日最佳。</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px;">
+        <span class="tip-icon">🎫</span>
+        <span>张掖丹霞门票约54元/人，含区间车。建议游览3-4小时。儿童半价。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card theme-塔尔寺">
+    <div class="day-header">
+      <div class="day-num">D6</div>
+      <div class="day-date">08/20 周四</div>
+      <div class="day-info">
+        <h2>🛕 塔尔寺·西宁citywalk</h2>
+        <div class="route">塔尔寺 → 东关清真大寺 → 力盟商业巷</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+        <div class="swiper day6-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/static/images/d6-ta'er-temple.jpg" alt="塔尔寺"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">🛕</span> 打卡景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏛️ 塔尔寺</span>
+        <span class="spot-tag">🕌 东关清真大寺</span>
+        <span class="spot-tag">🛍️ 力盟商业巷</span>
+      </div>
+      <div class="section-title"><span class="icon">🍽️</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🥣 炕羊排</span>
+        <span class="food-tag">🍜 酿皮</span>
+        <span class="food-tag">🧃 甜醅</span>
+        <span class="food-tag">🥛 酸奶</span>
+        <span class="food-tag">🥩 手抓羊肉</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🙏</span>
+        <span>塔尔寺是藏传佛教格鲁派六大寺院之一，艺术三绝（壁画、堆绣、酥油花）必看！进入大殿请保持安静，不要拍照。建议游览2-3小时。</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px;">
+        <span class="tip-icon">🎫</span>
+        <span>塔尔寺门票约80元/人，儿童6-12岁半价。东关清真大寺免费参观（注意尊重宗教礼仪）。力盟商业巷为西宁本地商业街区，适合逛街购物。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-card theme-return">
+    <div class="day-header">
+      <div class="day-num">D7</div>
+      <div class="day-date">08/21 周五</div>
+      <div class="day-info">
+        <h2>✈️ 满载而归</h2>
+        <div class="route">西宁曹家堡机场 → 深圳 🧳✈️💕</div>
+      </div>
+    </div>
+    <div class="day-body" style="text-align:center; padding:40px;">
+      <div style="font-size:64px; margin-bottom:15px;">🧳✈️💕</div>
+      <p style="font-family:'ZCOOL KuaiLe',cursive; font-size:20px; color:var(--dark);">下一站，期待下一次相遇！</p>
+    </div>
+  </div>
+
+  <!-- 青海旅行贴士 -->
+  <div class="info-section">
+    <h2>🏔️ 青海旅行贴士</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">🌡️</div>
+        <h3>高原气候</h3>
+        <p>西宁海拔2200m，青海湖3200m。昼夜温差大（10-27°C），早晚需穿外套。紫外线极强，务必防晒！</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">⛰️</div>
+        <h3>高原反应</h3>
+        <p>部分游客可能有轻微高原反应（头痛、气短），建议：①第一晚少洗澡 ②行动放缓 ③备好红景天/氧气瓶</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">👗</div>
+        <h3>穿衣建议</h3>
+        <p>8月青海日间20-27°C，夜间10-15°C。建议：T恤+薄外套/冲锋衣，长裤，防晒帽，墨镜。湖边风大需注意保暖。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🚗</div>
+        <h3>交通建议</h3>
+        <p>青海湖环线景点分散，建议包车或自驾（西宁租车约300-400元/天）。茶卡/门源距西宁各约2-3小时车程。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🎒</div>
+        <h3>必备物品</h3>
+        <p>防晒霜SPF50+、墨镜、防晒帽、润唇膏、保湿霜、常用药品（感冒/肠胃/晕车）、保温杯、雨伞/雨衣</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🌻</div>
+        <h3>最佳季节</h3>
+        <p>7-8月是青海最佳旅行季节！门源油菜花海正值盛花期，青海湖水最蓝，气温最舒适（15-25°C）。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 信息汇总 -->
+  <div class="info-section">
+    <h2>📋 实用信息汇总</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">✈️</div>
+        <h3>航班建议</h3>
+        <p>深圳✈️西宁（曹家堡机场），建议选D1上午航班，下午抵达后适应高原环境</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🏨</div>
+        <h3>住宿推荐</h3>
+        <p>西宁（3晚）：大十字/力盟商圈<br>青海湖沿线（1晚）：湖边民宿<br>祁连（1晚）：县城酒店</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">⚠️</div>
+        <h3>注意事项</h3>
+        <p>1. 尊重藏传佛教礼仪<br>2. 湖边注意防风保暖<br>3. 茶卡盐湖穿深色鞋<br>4. 提前预订门票</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 预算 -->
+  <div class="info-section">
+    <h2>💰 预算参考（2人：1成人 + 1儿童8岁）</h2>
+    <div style="text-align:center; margin-bottom:15px;">
+      <span style="font-size:13px; color:#888; background:#FFF8E1; padding:4px 12px; border-radius:20px; border:1px solid #FFD54F;">
+        📌 数据来源：网络公开攻略；门票为2025-2026年官方参考价
+      </span>
+    </div>
+    <div style="max-width:600px; margin:0 auto;">
+      <div class="budget-bar">
+        <span class="budget-label">🏨 住宿</span>
+        <div class="budget-track"><div class="budget-fill" style="width:55%"></div></div>
+        <span class="budget-value">2000-3000元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🍜 餐饮</span>
+        <div class="budget-track"><div class="budget-fill" style="width:30%"></div></div>
+        <span class="budget-value">~1500元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚗 当地交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:20%"></div></div>
+        <span class="budget-value">~1000元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">⛽ 油费/租车</span>
+        <div class="budget-track"><div class="budget-fill" style="width:13%"></div></div>
+        <span class="budget-value">~600元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚄 城际交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:6%"></div></div>
+        <span class="budget-value">~300元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🎫 门票</span>
+        <div class="budget-track"><div class="budget-fill" style="width:7%"></div></div>
+        <span class="budget-value">~350元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🛒 购物特产</span>
+        <div class="budget-track"><div class="budget-fill" style="width:4%"></div></div>
+        <span class="budget-value">200-400元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:15px; padding-top:15px; border-top:2px dashed var(--dark);">
+        <span class="budget-label" style="font-weight:bold;">💵 小计（不含大交通）</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red);">5700-6800元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px;">
+        <span class="budget-label">✈️ 大交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:50%; background:linear-gradient(90deg,#90CAF9,#64B5F6);"></div></div>
+        <span class="budget-value">1000-1800元/人</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px; padding-top:12px; border-top:3px double var(--dark);">
+        <span class="budget-label" style="font-size:15px; font-weight:bold;">🎯 预估总计</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#E53935,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red); font-size:18px;">7600-10000元</span>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:18px;">
+      <button onclick="document.getElementById('budgetModal').style.display='flex'" style="font-family:'ZCOOL KuaiLe',cursive; font-size:16px; padding:10px 28px; border-radius:30px; border:3px solid var(--dark); background:var(--warm); color:var(--dark); cursor:pointer; box-shadow:3px 3px 0px var(--dark); transition:all 0.15s;" onmouseover="this.style.background='#FFD54F'; this.style.transform='translate(-1px,-1px)'; this.style.boxShadow='4px 4px 0px var(--dark)';" onmouseout="this.style.background='#FFD54F'; this.style.transform='translate(0,0)'; this.style.boxShadow='3px 3px 0px var(--dark)';">📋 点击查看费用明细</button>
+    </div>
+  </div>
+
+  <!-- 弹窗 -->
+  <div id="budgetModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.55); align-items:center; justify-content:center; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:white; border-radius:20px; border:4px solid var(--dark); padding:28px 30px; max-width:640px; width:100%; max-height:85vh; overflow-y:auto; box-shadow:6px 6px 0px var(--dark); position:relative;">
+      <button onclick="document.getElementById('budgetModal').style.display='none'" style="position:absolute; top:12px; right:16px; font-size:22px; background:none; border:none; cursor:pointer; color:var(--dark); line-height:1;">✕</button>
+      <h3 style="font-family:'ZCOOL KuaiLe',cursive; color:var(--dark); margin-bottom:16px; font-size:20px; padding-right:40px;">📋 费用明细（2人，7天）</h3>
+      <table style="width:100%; font-size:13px; border-collapse:collapse; color:var(--dark);">
+        <tr style="background:#E3F2FD; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 酒店（6晚：西宁3晚+青海湖1晚+祁连1晚+张掖1晚，含早）</td>
+          <td style="text-align:right; font-weight:bold; border-bottom:1px solid #E0E0E0;">2000-3000元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D1西宁（莫家街晚餐+小吃，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D2青海湖（湖边餐厅午餐+晚餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D3茶卡盐湖（景区内简餐+西宁晚餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D4祁连（卓尔山简餐+晚餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D5张掖（午餐简餐+晚餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D6西宁（塔尔寺附近午餐+力盟晚餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D7（早餐+返程简餐，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~100元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 餐饮小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">1500元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚗 西宁-青海湖-茶卡环线（包车/自驾，含油费过路费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~800元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚗 青海湖-祁连-门源（包车/自驾，含油费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚗 祁连-张掖-西宁（包车/自驾，含油费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚄 D6 西宁曹家堡机场→塔尔寺（打车/公交，2人）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~80元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚗 当地交通小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~1000元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">⛽ 油费/租车（西宁租车约350元/天×3天）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~600元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 青海湖景区（成人100，儿童半价50）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 茶卡盐湖（成人60，儿童半价30）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">90元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 塔尔寺（成人80，儿童半价40）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">120元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 卓尔山（成人50，儿童半价25）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">75元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 张掖丹霞（成人54，儿童半价27）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">81元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 门票小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">350元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px;">🛒 购物+特产（枸杞/牛肉干/酸奶等）</td>
+          <td style="text-align:right; font-weight:bold;">200-400元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:7px 6px;">🧮 小计（不含往返大交通）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">5700-6800元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold; border-top:2px solid var(--dark);">
+          <td style="padding:7px 6px;">✈️ 往返大交通（飞机，深圳✈️西宁）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">1000-1800元/人</td>
+        </tr>
+        <tr style="background:linear-gradient(135deg,#E53935,#FF8A65); color:white; font-weight:bold;">
+          <td style="padding:9px 6px; font-size:15px;">🎯 预估总计（2人，7天）</td>
+          <td style="text-align:right; font-size:19px;">7600-10000元</td>
+        </tr>
+      </table>
+      <div class="tip-box" style="margin-top:12px;">
+        <span class="tip-icon">👶</span>
+        <span><b>儿童票价（8岁）：</b>青海湖/茶卡/塔尔寺/卓尔山/张掖丹霞均按6-12岁儿童票半价计算（成人全价×0.5）。大部分景点对6周岁以下或身高1.2米以下免费，8岁儿童需购儿童票。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">📊</span>
+        <span><b>行程覆盖：</b>本预算严格对应7日行程（D1深圳落地西宁→D2青海湖→D3茶卡盐湖→D4祁连卓尔山/门源→D5张掖丹霞→D6塔尔寺→D7返程），不含沿途未安排景点（如祁连山大草原深处）。交通以包车/自驾为主，已单独计入当地交通和油费/租车费用，无重复计算。</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ====== 底部 ====== -->
+<footer class="poster-footer">
+  <h2>🌊 青海之旅 · 等你来 ❤️</h2>
+  <p>#青海旅行 #青海湖 #茶卡盐湖 #塔尔寺 #门源花海 #张掖丹霞 #高原秘境 #攻略</p>
+  <div class="footer-flowers">🌸</div>
+  <div class="footer-flowers">🌼</div>
+  <div class="footer-flowers">🌺</div>
+  <div class="footer-flowers">🌻</div>
+  <div class="footer-flowers">🌷</div>
+  <div class="footer-flowers">🌸</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.querySelectorAll('.carousel-wrap .swiper').forEach(function(el) {
+  new Swiper(el, {
+    loop: true,
+    pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
+    navigation: { nextEl: el.querySelector('.swiper-button-next'), prevEl: el.querySelector('.swiper-button-prev') },
+    autoplay: { delay: 3500, disableOnInteraction: false },
+  });
+});
+</script>
+
+</body>
+</html>

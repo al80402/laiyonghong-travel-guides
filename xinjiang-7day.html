@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新疆7日旅行攻略</title>
+<meta property="og:title" content="新疆7日旅行攻略 | 乌鲁木齐×天山×独库公路亲子之旅">
+<meta property="og:description" content="2人7日行程：乌鲁木齐→天山天池→吐鲁番→独库公路→巴音布鲁克→那拉提，含美食攻略、景点打卡、预算明细（约10500-13200元）">
+<meta property="og:image" content="https://laiyonghong.ddnsto.com/static/xinjiang_trip_cover.jpg">
+<meta property="og:url" content="https://laiyonghong.ddnsto.com/static/xinjiang-7day.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://laiyonghong.ddnsto.com/static/xinjiang_trip_cover.jpg" type="image/jpeg">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<style>
+  :root {
+    --sky: #87CEEB;
+    --grass: #7CB342;
+    --warm: #FFD54F;
+    --peach: #FFAB91;
+    --pink: #F48FB1;
+    --brown: #8D6E63;
+    --cream: #FFF8E1;
+    --dark: #4E342E;
+    --red: #E53935;
+    --green-dark: #558B2F;
+    --title-dark: #0D47A1;
+    --title-stroke: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  /* 描边字体 */
+  .stroke-text {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 2px var(--dark);
+    color: white;
+    text-shadow: 3px 3px 0px var(--dark);
+  }
+
+  .stroke-text-fill {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    -webkit-text-stroke: 1.5px var(--dark);
+    color: var(--warm);
+    text-shadow: 2px 2px 0px var(--dark);
+  }
+
+  /* 海报头部 */
+  .poster-header {
+    background: linear-gradient(180deg, #1565C0 0%, #42A5F5 30%, #FFD54F 60%, #FF8A65 80%, #8D6E63 100%);
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  /* 宫崎骏风格云朵 */
+  .cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  .cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+  }
+  .cloud-1 { width: 120px; height: 50px; top: 60px; left: 10%; animation: float 8s ease-in-out infinite; }
+  .cloud-1::before { width: 60px; height: 60px; top: -30px; left: 20px; }
+  .cloud-1::after { width: 80px; height: 50px; top: -20px; left: 50px; }
+  .cloud-2 { width: 160px; height: 60px; top: 100px; right: 15%; animation: float 10s ease-in-out infinite reverse; }
+  .cloud-2::before { width: 80px; height: 80px; top: -40px; left: 30px; }
+  .cloud-2::after { width: 100px; height: 60px; top: -25px; left: 60px; }
+  .cloud-3 { width: 100px; height: 40px; top: 40px; left: 40%; animation: float 6s ease-in-out infinite; }
+  .cloud-3::before { width: 50px; height: 50px; top: -25px; left: 15px; }
+  .cloud-3::after { width: 65px; height: 40px; top: -18px; left: 40px; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* 太阳 */
+  .sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #FFD54F, #FFB300);
+    border-radius: 50%;
+    top: 30px;
+    right: 10%;
+    box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300;
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 60px #FFD54F, 0 0 100px #FFB300; }
+    50% { box-shadow: 0 0 80px #FFD54F, 0 0 140px #FFB300; }
+  }
+
+  /* 山丘 */
+  .hills {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+  }
+  .hill {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .hill-1 { width: 400px; height: 180px; background: #8D6E63; left: -50px; }
+  .hill-2 { width: 500px; height: 200px; background: #A1887F; left: 200px; }
+  .hill-3 { width: 450px; height: 160px; background: #BCAAA4; right: -50px; }
+  .hill-4 { width: 300px; height: 120px; background: #D7CCC8; left: 50%; transform: translateX(-50%); }
+
+  /* 骆驼剪影 */
+  .camel {
+    position: absolute;
+    bottom: 60px;
+    right: 25%;
+    font-size: 48px;
+    opacity: 0.7;
+    animation: camelWalk 12s ease-in-out infinite;
+  }
+  @keyframes camelWalk {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+  }
+
+  /* 小房子 */
+  .house {
+    position: absolute;
+    bottom: 80px;
+    left: 15%;
+  }
+  .house-body {
+    width: 60px;
+    height: 45px;
+    background: #FFF9C4;
+    border: 3px solid var(--dark);
+    position: relative;
+  }
+  .house-roof {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 35px solid var(--red);
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    border: 3px solid var(--dark);
+    border-top: none;
+  }
+  .house-door {
+    width: 18px;
+    height: 28px;
+    background: var(--brown);
+    border: 2px solid var(--dark);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px 2px 0 0;
+  }
+  .house-window {
+    width: 14px;
+    height: 14px;
+    background: #B3E5FC;
+    border: 2px solid var(--dark);
+    position: absolute;
+    top: 8px;
+    border-radius: 50%;
+  }
+  .house-window.left { left: 6px; }
+  .house-window.right { right: 6px; }
+
+  /* 小人物 */
+  .person {
+    position: absolute;
+    bottom: 60px;
+  }
+  .person-body {
+    width: 20px;
+    height: 25px;
+    background: var(--pink);
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+  }
+  .person-head {
+    width: 18px;
+    height: 18px;
+    background: #FFE0B2;
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+    margin: 0 auto 2px;
+  }
+  .person-1 { left: 25%; }
+  .person-2 { left: 28%; }
+  .person-3 { right: 20%; }
+
+  /* 花朵 */
+  .flower {
+    position: absolute;
+    bottom: 30px;
+    font-size: 24px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+  .flower:nth-child(1) { left: 5%; animation-delay: 0s; }
+  .flower:nth-child(2) { left: 12%; animation-delay: 0.5s; }
+  .flower:nth-child(3) { right: 8%; animation-delay: 1s; }
+  .flower:nth-child(4) { right: 15%; animation-delay: 1.5s; }
+  .flower:nth-child(5) { left: 35%; animation-delay: 0.3s; }
+
+  /* 蝴蝶 */
+  .butterfly {
+    position: absolute;
+    font-size: 20px;
+    animation: fly 12s linear infinite;
+  }
+  @keyframes fly {
+    0% { top: 200px; left: -50px; }
+    25% { top: 150px; }
+    50% { top: 180px; left: 50%; }
+    75% { top: 130px; }
+    100% { top: 200px; left: 110%; }
+  }
+
+  /* 标题区域 */
+  .title-area {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .title-area::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10%;
+    right: -10%;
+    bottom: -20px;
+    background: rgba(13, 71, 161, 0.55);
+    border-radius: 24px;
+    z-index: -1;
+    backdrop-filter: blur(2px);
+  }
+  .title-area h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 88px;
+    color: var(--dark);
+    text-shadow:
+      -3px -3px 0 #FFF, 3px -3px 0 #FFF,
+      -3px 3px 0 #FFF, 3px 3px 0 #FFF,
+      -3px 0 0 #FFF, 3px 0 0 #FFF,
+      0 -3px 0 #FFF, 0 3px 0 #FFF,
+      4px 4px 0px rgba(0,0,0,0.2);
+    letter-spacing: 10px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .title-area .subtitle {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: var(--dark);
+    text-shadow:
+      -2px -2px 0 #FFF, 2px -2px 0 #FFF,
+      -2px 2px 0 #FFF, 2px 2px 0 #FFF,
+      -2px 0 0 #FFF, 2px 0 0 #FFF,
+      0 -2px 0 #FFF, 0 2px 0 #FFF,
+      3px 3px 0px rgba(0,0,0,0.2);
+    margin-top: 10px;
+    letter-spacing: 6px;
+  }
+  .title-area .tagline {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    background: rgba(0,0,0,0.45);
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+  }
+
+  /* 美食emoji装饰 */
+  .food-deco {
+    position: absolute;
+    font-size: 40px;
+    z-index: 5;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+  }
+  .food-deco:nth-child(1) { top: 120px; left: 8%; animation-delay: 0s; }
+  .food-deco:nth-child(2) { top: 160px; right: 8%; animation-delay: 0.3s; }
+  .food-deco:nth-child(3) { top: 280px; left: 5%; animation-delay: 0.6s; }
+  .food-deco:nth-child(4) { top: 300px; right: 5%; animation-delay: 0.9s; }
+
+  /* 主内容 */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  /* 日程卡片 */
+  .day-card {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px var(--dark);
+    transition: transform 0.3s;
+  }
+  .day-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px var(--dark);
+  }
+
+  /* 卡片头部 */
+  .day-header {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 3px solid var(--dark);
+  }
+  .day-num {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 48px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    min-width: 80px;
+    text-align: center;
+  }
+  .day-date {
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.2);
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-top: 4px;
+  }
+  .day-info h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 24px;
+    color: var(--dark);
+    letter-spacing: 2px;
+  }
+  .day-info .route {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* 卡片内容 */
+  .day-body {
+    padding: 25px;
+  }
+  .section-title {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .icon {
+    font-size: 22px;
+  }
+
+  /* 景点标签 */
+  .spot-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .spot-tag {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* 美食标签 */
+  .food-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .food-tag {
+    background: #FFF3E0;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* Tips */
+  .tip-box {
+    background: #E8F5E9;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .tip-box .tip-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  /* 颜色主题 */
+  .theme-urumqi .day-header { background: linear-gradient(135deg, #CE93D8, #AB47BC); }
+  .theme-tianshan .day-header { background: linear-gradient(135deg, #80DEEA, #4DD0E1); }
+  .theme-turpan .day-header { background: linear-gradient(135deg, #FF8A65, #E64B19); }
+  .theme-duku .day-header { background: linear-gradient(135deg, #A5D6A7, #66BB6A); }
+  .theme-nalati .day-header { background: linear-gradient(135deg, #FFF59D, #FFEE58); }
+  .theme-citywalk .day-header { background: linear-gradient(135deg, #FFF59D, #FFF176); }
+  .theme-flight .day-header { background: linear-gradient(135deg, #90CAF9, #64B5F6); }
+
+  /* 天气预报 */
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .weather-panel {
+    border-radius: 16px;
+    padding: 18px;
+  }
+  .weather-panel h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .weather-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .weather-panel table th {
+    padding: 6px 4px;
+    text-align: center;
+    border-radius: 8px 0 0 0;
+  }
+  .weather-panel table th:last-child {
+    border-radius: 0 8px 0 0;
+  }
+  .weather-panel table td {
+    padding: 5px 4px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .weather-panel .weather-extra {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .weather-tip {
+    max-width: 900px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.8;
+    border: 1px solid #FFE0B2;
+  }
+  @media (max-width: 600px) {
+    .weather-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .weather-panel table {
+      font-size: 12px;
+    }
+    .weather-panel table th,
+    .weather-panel table td {
+      padding: 4px 2px;
+    }
+    .weather-tip {
+      margin-left: 12px;
+      margin-right: 12px;
+      padding: 12px 14px;
+      font-size: 12px;
+    }
+  }
+
+  /* 信息汇总 */
+  .info-section {
+    background: white;
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0px var(--dark);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .info-section h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 28px;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .info-card {
+    background: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 18px;
+    text-align: center;
+  }
+  .info-card .info-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .info-card h3 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+  .info-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* 预算 */
+  .budget-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+  }
+  .budget-label {
+    font-size: 13px;
+    width: 60px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .budget-track {
+    flex: 1;
+    height: 16px;
+    background: #E0E0E0;
+    border-radius: 8px;
+    border: 2px solid var(--dark);
+    overflow: hidden;
+  }
+  .budget-fill {
+    height: 100%;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--grass), var(--warm));
+  }
+  .budget-value {
+    font-size: 13px;
+    width: 80px;
+    flex-shrink: 0;
+    font-weight: bold;
+  }
+
+  /* 底部 */
+  .poster-footer {
+    background: linear-gradient(180deg, #8D6E63, #5D4037);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .poster-footer h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 36px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark);
+    text-shadow: 3px 3px 0px var(--dark);
+    margin-bottom: 15px;
+  }
+  .poster-footer p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .footer-flowers {
+    position: absolute;
+    bottom: 10px;
+    font-size: 28px;
+    animation: sway 3s ease-in-out infinite;
+  }
+  .footer-flowers:nth-child(1) { left: 10%; animation-delay: 0s; }
+  .footer-flowers:nth-child(2) { left: 25%; animation-delay: 0.5s; }
+  .footer-flowers:nth-child(3) { left: 40%; animation-delay: 1s; }
+  .footer-flowers:nth-child(4) { right: 40%; animation-delay: 1.5s; }
+  .footer-flowers:nth-child(5) { right: 25%; animation-delay: 0.3s; }
+  .footer-flowers:nth-child(6) { right: 10%; animation-delay: 0.8s; }
+
+  /* 装饰元素 */
+  .deco-line {
+    width: 60px;
+    height: 4px;
+    background: var(--warm);
+    border-radius: 2px;
+    margin: 15px 0;
+    border: 2px solid var(--dark);
+  }
+
+  /* 响应式 */
+  @media (max-width: 600px) {
+    .title-area h1 { font-size: 42px; letter-spacing: 4px; }
+    .title-area .subtitle { font-size: 18px; }
+    .day-num { font-size: 36px; min-width: 60px; }
+    .day-info h2 { font-size: 18px; }
+    .info-grid { grid-template-columns: 1fr; }
+  }
+
+  /* 景点轮播图 */
+  .carousel-wrap {
+    margin-bottom: 18px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid var(--dark);
+    box-shadow: 4px 4px 0px var(--dark);
+  }
+  .carousel-wrap .swiper {
+    width: 100%;
+    height: 160px;
+  }
+  .carousel-wrap .swiper-slide img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+  }
+  .carousel-wrap .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+    border: 2px solid var(--dark);
+  }
+  .carousel-wrap .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--red);
+    border-color: var(--dark);
+  }
+  .carousel-wrap .swiper-button-next,
+  .carousel-wrap .swiper-button-prev {
+    color: white;
+    background: rgba(0,0,0,0.35);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .carousel-wrap .swiper-button-next::after,
+  .carousel-wrap .swiper-button-prev::after {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* 新疆提示板块 */
+  .tips-section {
+    background: linear-gradient(135deg, #FFF8E1, #FFECB3);
+    border-radius: 24px;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0px var(--dark);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .tips-section h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 28px;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+  }
+  .tip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .tip-item {
+    background: white;
+    border: 2px solid var(--dark);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .tip-item .tip-emoji {
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+  .tip-item .tip-text {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #444;
+  }
+  .tip-item .tip-text strong {
+    color: var(--dark);
+  }
+</style>
+
+<link rel="canonical" href="https://laiyonghong.ddnsto.com/static/xinjiang-7day.html">
+
+<!-- WeChat Share Optimization -->
+<meta property="weixin:content:img_path" content="" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body>
+
+<!-- ====== 海报头部 ====== -->
+<header class="poster-header">
+  <!-- 云朵 -->
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+  <!-- 太阳 -->
+  <div class="sun"></div>
+  <!-- 蝴蝶 -->
+  <div class="butterfly">🦋</div>
+  <!-- 美食装饰 -->
+  <div class="food-deco">🍈</div>
+  <div class="food-deco">🫓</div>
+  <div class="food-deco">🐎</div>
+  <div class="food-deco">🌶️</div>
+  <!-- 山丘 -->
+  <div class="hills">
+    <div class="hill hill-1"></div>
+    <div class="hill hill-2"></div>
+    <div class="hill hill-3"></div>
+    <div class="hill hill-4"></div>
+  </div>
+  <!-- 骆驼 -->
+  <div class="camel">🐪</div>
+  <!-- 花朵 -->
+  <div class="flower">🌸</div>
+  <div class="flower">🌼</div>
+  <div class="flower">🌺</div>
+  <div class="flower">🌻</div>
+  <div class="flower">🌷</div>
+  <!-- 房子 -->
+  <div class="house">
+    <div class="house-body">
+      <div class="house-roof"></div>
+      <div class="house-window left"></div>
+      <div class="house-window right"></div>
+      <div class="house-door"></div>
+    </div>
+  </div>
+  <!-- 人物 -->
+  <div class="person person-1">
+    <div class="person-head"></div>
+    <div class="person-body"></div>
+  </div>
+  <div class="person person-2">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#90CAF9"></div>
+  </div>
+  <div class="person person-3">
+    <div class="person-head"></div>
+    <div class="person-body" style="background:#FFF9C4"></div>
+  </div>
+  <!-- 标题 -->
+  <div class="title-area">
+    <h1>新疆7日游</h1>
+    <div class="subtitle">乌鲁木齐 × 天山 × 独库公路</div>
+    <div class="tagline">🐎 西域风情 · 一路向西 · 绝不踩雷 📋</div>
+    <div class="tagline" style="font-size:14px; opacity:0.9; margin-top:6px;">📌 2026年8月15日-21日 · 数据来源：马蜂窝、穷游网、携程攻略等公开攻略</div>
+  </div>
+</header>
+
+<!-- ====== 天气预报 ====== -->
+<div class="info-section" style="margin-top:0;">
+  <h2>🌤️ 实时天气预报（数据来源：Open-Meteo）</h2>
+
+  <div class="weather-grid">
+    <!-- 乌鲁木齐 -->
+    <div class="weather-panel" style="background:#E3F2FD;">
+      <h3 style="color:#1565C0;">🏔️ 乌鲁木齐（8月15日-19日）</h3>
+      <table>
+        <tr style="background:#BBDEFB; color:#0D47A1;">
+          <th>日期</th><th>天气</th><th>温度</th><th>降水</th>
+        </tr>
+        <tr><td>08/15 六</td><td>🌦毛毛雨</td><td>21~30°C</td><td>0.5mm</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/16 日</td><td>🌦毛毛雨</td><td>22~31°C</td><td>1.5mm</td></tr>
+        <tr><td>08/17 一</td><td>☀️晴朗</td><td>24~34°C</td><td>0mm</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/18 二</td><td>⛅局部多云</td><td>23~35°C</td><td>0mm</td></tr>
+        <tr><td>08/19 三</td><td>⛅局部多云</td><td>23~35°C</td><td>0mm</td></tr>
+        <tr style="background:#E3F2FD;"><td>08/20 四</td><td>⏳待确认</td><td>—</td><td>—</td></tr>
+        <tr><td>08/21 五</td><td>⏳待确认</td><td>—</td><td>—</td></tr>
+      </table>
+      <div class="weather-extra" style="color:#1565C0;">☀️ UV最高6.65（强）· 日出~日落 06:50-20:30（新疆时约19:30）</div>
+    </div>
+    <!-- 吐鲁番 -->
+    <div class="weather-panel" style="background:#FFF3E0;">
+      <h3 style="color:#E65100;">🌡️ 吐鲁番（8月17日 火焰山专线）</h3>
+      <table>
+        <tr style="background:#FFE0B2; color:#BF360C;">
+          <th>日期</th><th>天气</th><th>温度</th><th>降水</th>
+        </tr>
+        <tr><td>08/17 一</td><td>☀️晴朗</td><td>32~38°C</td><td>0mm</td></tr>
+        <tr style="background:#FFF8E1;"><td colspan="4" style="color:#E65100; font-weight:bold;">🔥 火焰山地表温度可达75°C！务必做好防暑！</td></tr>
+      </table>
+      <div class="weather-extra" style="color:#E65100;">🌡️ 中国最热地区 · 吐鲁番盆地 · 干燥炎热</div>
+    </div>
+  </div>
+  <div class="weather-tip" style="background:#FFF8E1; border-color:#FFE0B2;">
+    <strong>⚠️ 天气出行建议：</strong><br>
+    • <strong>D1-D2</strong>乌鲁木齐有毛毛雨，气温21-31°C，体感舒适，带件薄外套即可<br>
+    • <strong>D3</strong>吐鲁番38°C极热！火焰山行程建议早上8点前出发，避开正午暴晒<br>
+    • <strong>D4-D5</strong>巴音布鲁克/那拉提海拔较高（约1800-2500m），昼夜温差大，务必带厚外套<br>
+    • <strong>紫外线极强</strong>（UV最高6.65），高原地区紫外线更强，必须涂高倍防晒霜+戴帽子<br>
+    • 新疆地域辽阔，每天车程3-6小时正常，备好颈枕、零食、水杯
+  </div>
+</div>
+
+<!-- ====== 正文内容 ====== -->
+<主 class="content">
+
+  <!-- Day 1 -->
+  <div class="day-card theme-urumqi">
+    <div class="day-header">
+      <div class="day-num">D1</div>
+      <div class="day-date">08/15 周六</div>
+      <div class="day-info">
+        <h2>🎒 抵达乌鲁木齐</h2>
+        <div class="route">深圳✈️乌鲁木齐 → 国际大巴扎 → 新疆维吾尔自治区博物馆</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+         <div class="swiper day1-swiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="/static/images/d1-bazar.jpg" alt="国际大巴扎"></div>
+           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">🕌</span> 必逛景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🕌 国际大巴扎</span>
+        <span class="spot-tag">🏛️ 新疆维吾尔自治区博物馆</span>
+        <span class="spot-tag">🗿 干尸展（楼兰美女）</span>
+        <span class="spot-tag">🎨 新疆民族文化艺术</span>
+      </div>
+      <div class="section-title"><span class="icon">🍢</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍢 烤羊肉串</span>
+        <span class="food-tag">🫓 烤包子</span>
+        <span class="food-tag">🍜 拉条子</span>
+        <span class="food-tag">🥣 酸奶</span>
+        <span class="food-tag">🍈 哈密瓜</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>新疆时差2小时（比北京时间晚），晚上10点才天黑！第一天别安排太满，逛完大巴扎找个餐厅吃顿烤肉好好休息~</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card theme-tianshan">
+    <div class="day-header">
+      <div class="day-num">D2</div>
+      <div class="day-date">08/16 周日</div>
+      <div class="day-info">
+        <h2>🏔️ 天山天池一日游</h2>
+        <div class="route">乌鲁木齐 → 天山天池（约1.5h）→ 坎儿井 → 返回乌鲁木齐</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+         <div class="swiper day2-swiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="/static/images/d2-tianshan.jpg" alt="天山天池"></div>
+           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🏔️ 天山天池（75元）</span>
+        <span class="spot-tag">🌊 西王母祖庙</span>
+        <span class="spot-tag">🚡 索道</span>
+        <span class="spot-tag">🕳️ 坎儿井（免费参观）</span>
+      </div>
+      <div class="section-title"><span class="icon">🍽️</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍖 烤羊肉串</span>
+        <span class="food-tag">🥣 新疆酸奶</span>
+        <span class="food-tag">🫓 烤包子</span>
+        <span class="food-tag">🍜 拉条子</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🎫</span>
+        <span>天山天池门票75元/人，儿童半价。建议景区观光车一起购买（45元），否则走路很多。天池海拔约1900m，不用太担心高反。</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <span class="tip-icon">💡</span>
+        <span>坎儿井是人工灌溉系统，了解即可，不用买额外票。天山天池上午去人少景美，下午回程路上看看日落~</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card theme-turpan">
+    <div class="day-header">
+      <div class="day-num">D3</div>
+      <div class="day-date">08/17 周一</div>
+      <div class="day-info">
+        <h2>🔥 火焰山·吐鲁番</h2>
+        <div class="route">乌鲁木齐 → 火焰山 → 交河故城 → 葡萄沟 → 返回乌鲁木齐</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+         <div class="swiper day3-swiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="/static/images/d3-flamemountain.jpg" alt="火焰山"></div>
+           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">🔥</span> 必逛景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🌋 火焰山（50元）</span>
+        <span class="spot-tag">🏛️ 交河故城（60元）</span>
+        <span class="spot-tag">🍇 葡萄沟（45元）</span>
+        <span class="spot-tag">🏜️ 坎儿井游乐园</span>
+      </div>
+      <div class="section-title"><span class="icon">🍇</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍇 无核白葡萄</span>
+        <span class="food-tag">🍈 哈密瓜</span>
+        <span class="food-tag">🥤 酸奶粽子</span>
+        <span class="food-tag">🍖 烤全羊</span>
+        <span class="food-tag">🫓 馕</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">⚠️</span>
+        <span>吐鲁番8月气温高达38°C，火焰山更是热到离谱！务必带上充足饮用水（至少2瓶/人）、防晒帽、防晒衣。建议早上8点到达火焰山，中午最热时待在葡萄沟乘凉吃葡萄~</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <span class="tip-icon">📸</span>
+        <span>火焰山有孙悟空借芭蕉扇的典故，可以拍趣味合照。交河故城是保存最完整的古城遗址之一，比高昌故城更震撼，建议请讲解。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card theme-duku">
+    <div class="day-header">
+      <div class="day-num">D4</div>
+      <div class="day-date">08/18 周二</div>
+      <div class="day-info">
+        <h2>🛣️ 独库公路（部分）· 巴音布鲁克</h2>
+        <div class="route">乌鲁木齐 → 独库公路（独山子段）→ 巴音布鲁克草原</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+         <div class="swiper day4-swiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="/static/images/d4-duku.jpg" alt="独库公路"></div>
+           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 沿途风光</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🛣️ 独库公路（部分段）</span>
+        <span class="spot-tag">🌄 乔尔玛烈士陵园</span>
+        <span class="spot-tag">🐎 巴音布鲁克草原（80元）</span>
+        <span class="spot-tag">🌅 九曲十八弯日落</span>
+        <span class="spot-tag">🦢 天鹅湖</span>
+      </div>
+      <div class="section-title"><span class="icon">🍽️</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍖 手抓饭</span>
+        <span class="food-tag">🍢 烤羊肉串</span>
+        <span class="food-tag">🥣 奶茶</span>
+        <span class="food-tag">🫓 馕</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🌡️</span>
+        <span>巴音布鲁克草原海拔约2500m，即使8月晚上也可能只有10°C左右，必须带羽绒服或厚冲锋衣！九曲十八弯日落是此生必看美景，务必提前占位。</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <span class="tip-icon">💡</span>
+        <span>独库公路若全程开放可走完全程，否则只走乌鲁木齐-巴音布鲁克段。路况复杂，建议包车/自驾经验丰富的老司机。沿途信号差，提前下载离线地图。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card theme-nalati">
+    <div class="day-header">
+      <div class="day-num">D5</div>
+      <div class="day-date">08/19 周三</div>
+      <div class="day-info">
+        <h2>🌿 那拉提草原 · 返回乌鲁木齐</h2>
+        <div class="route">巴音布鲁克 → 那拉提草原（95元）→ 返回乌鲁木齐（约6h车程）</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+         <div class="swiper day5-swiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="/static/images/d5-nalati.jpg" alt="那拉提草原"></div>
+           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">🌿</span> 必逛景点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">🌾 那拉提草原（95元）</span>
+        <span class="spot-tag">🐎 草原骑马</span>
+        <span class="spot-tag">📸 空中草原</span>
+        <span class="spot-tag">🏞️ 河谷草原</span>
+        <span class="spot-tag">🌄 日落远眺</span>
+      </div>
+      <div class="section-title"><span class="icon">🍽️</span> 美食推荐</div>
+      <div class="food-tags">
+        <span class="food-tag">🍖 手抓饭</span>
+        <span class="food-tag">🍢 烤包子</span>
+        <span class="food-tag">🥣 酸奶</span>
+        <span class="food-tag">🍜 拉条子</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">🎫</span>
+        <span>那拉提门票95元/人，儿童半价。景区内观光车55元/人必须买，否则走不完主要景点。空中草原是精华，建议先到那里。</span>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <span class="tip-icon">🛣️</span>
+        <span>从那拉提到乌鲁木齐约6小时车程，是全程最长的一天。建议中途在独山子或奎屯休息用餐，备好零食和水在路上吃。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card theme-citywalk">
+    <div class="day-header">
+      <div class="day-num">D6</div>
+      <div class="day-date">08/20 周四</div>
+      <div class="day-info">
+        <h2>🏙️ 乌鲁木齐 Citywalk</h2>
+        <div class="route">红山公园 → 新疆美术馆 → 美食街扫街</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <div class="carousel-wrap">
+         <div class="swiper day6-swiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="/static/images/d6-redhill.jpg" alt="红山公园"></div>
+           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="section-title"><span class="icon">📸</span> 打卡点</div>
+      <div class="spot-tags">
+        <span class="spot-tag">⛰️ 红山公园</span>
+        <span class="spot-tag">🏛️ 新疆美术馆</span>
+        <span class="spot-tag">🏙️ 红山观景台（俯瞰全城）</span>
+        <span class="spot-tag">🛍️ 国际大巴扎（补货）</span>
+        <span class="spot-tag">🍡 夜市美食街</span>
+      </div>
+      <div class="section-title"><span class="icon">🍢</span> 美食扫街</div>
+      <div class="food-tags">
+        <span class="food-tag">🍢 烤羊肉串</span>
+        <span class="food-tag">🍛 手抓饭</span>
+        <span class="food-tag">🫓 烤包子</span>
+        <span class="food-tag">🍜 拉条子</span>
+        <span class="food-tag">🥣 酸奶</span>
+        <span class="food-tag">🍈 哈密瓜</span>
+        <span class="food-tag">🍇 葡萄</span>
+      </div>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <span>红山公园是乌鲁木齐最佳观景点，日落时分景色绝美！新疆美术馆免费参观，建筑风格很有特色。美食街可以买特产（干果、馕）带回家。</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-card theme-flight">
+    <div class="day-header">
+      <div class="day-num">D7</div>
+      <div class="day-date">08/21 周五</div>
+      <div class="day-info">
+        <h2>✈️ 满载而归</h2>
+        <div class="route">乌鲁木齐 → 深圳，带着满满的回忆和特产回家~</div>
+      </div>
+    </div>
+    <div class="day-body" style="text-align:center; padding:40px;">
+      <div style="font-size:64px; margin-bottom:15px;">🧳✈️💕🐎</div>
+      <p style="font-family:'ZCOOL KuaiLe',cursive; font-size:20px; color:var(--dark);">西域之旅，终身难忘！</p>
+    </div>
+  </div>
+
+  <!-- 新疆旅行提示 -->
+  <div class="tips-section">
+    <h2>⚠️ 新疆旅行必备提示</h2>
+    <div class="tip-grid">
+      <div class="tip-item">
+        <span class="tip-emoji">🕐</span>
+        <div class="tip-text"><strong>时差注意：</strong>新疆使用北京时间但实际晚2小时，晚上10点才天黑，晚餐一般9点后开始</div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-emoji">🌡️</span>
+        <div class="tip-text"><strong>温差巨大：</strong>乌鲁木齐/吐鲁番白天35°C+，巴音布鲁克晚上可能只有10°C，必须带厚外套</div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-emoji">🛡️</span>
+        <div class="tip-text"><strong>安检频繁：</strong>新疆各地安检严格，带好身份证，预留安检时间，配合检查不急躁</div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-emoji">🚗</span>
+        <div class="tip-text"><strong>地域辽阔：</strong>景点之间距离远，每天车程3-6小时很常见，建议包车或自驾有经验的司机</div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-emoji">☀️</span>
+        <div class="tip-text"><strong>紫外线强：</strong>UV最高6.65，高原+沙漠双重加持，高倍防晒霜+帽子+墨镜必备</div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-emoji">💧</span>
+        <div class="tip-text"><strong>气候干燥：</strong>新疆非常干燥，多喝水，带润唇膏、保湿霜，吃辣后注意补水</div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-emoji">🍇</span>
+        <div class="tip-text"><strong>美食warning：</strong>新疆菜分量极大！2人点菜按1.5倍缩减，避免浪费。羊肉串按串点，别贪多</div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-emoji">📶</span>
+        <div class="tip-text"><strong>信号覆盖：</strong>独库公路、草原地区信号差，提前下载离线地图，备好现金（部分地方不支持扫码）</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 信息汇总 -->
+  <div class="info-section">
+    <h2>📋 实用信息汇总</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-icon">🚗</div>
+        <h3>交通建议</h3>
+        <p>强烈建议包车/自驾<br>乌鲁木齐市区打车便利<br>独库公路段建议经验丰富的老司机</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🏨</div>
+        <h3>住宿推荐</h3>
+        <p>乌鲁木齐：天山区/光明路<br>巴音布鲁克：草原蒙古包/宾馆<br>那拉提：景区附近酒店</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">⚠️</div>
+        <h3>注意事项</h3>
+        <p>1. 带好身份证（安检频繁）<br>2. 吐鲁番防暑、巴音布鲁克防寒<br>3. 沿途信号差，提前准备<br>4. 景区门票建议提前网购</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 预算 -->
+  <div class="info-section">
+    <h2>💰 预算参考（2人：1成人 + 1儿童8岁）</h2>
+    <div style="text-align:center; margin-bottom:15px;">
+      <span style="font-size:13px; color:#888; background:#FFF8E1; padding:4px 12px; border-radius:20px; border:1px solid #FFD54F;">
+        📌 数据来源：携程攻略 (2025.08)、马蜂窝 (2025.07)、新疆文旅厅；门票为2025年官方参考价
+      </span>
+    </div>
+    <div style="max-width:600px; margin:0 auto;">
+      <div class="budget-bar">
+        <span class="budget-label">🏨 住宿</span>
+        <div class="budget-track"><div class="budget-fill" style="width:62%"></div></div>
+        <span class="budget-value">2800-4000元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🍜 餐饮</span>
+        <div class="budget-track"><div class="budget-fill" style="width:42%"></div></div>
+        <span class="budget-value">~2000元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚕 市内交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:13%"></div></div>
+        <span class="budget-value">~600元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚗 包车/租车</span>
+        <div class="budget-track"><div class="budget-fill" style="width:18%"></div></div>
+        <span class="budget-value">~800元（油费）</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🚄 城际交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:9%"></div></div>
+        <span class="budget-value">~400元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🎫 门票</span>
+        <div class="budget-track"><div class="budget-fill" style="width:11%"></div></div>
+        <span class="budget-value">~500元</span>
+      </div>
+      <div class="budget-bar">
+        <span class="budget-label">🛒 购物特产</span>
+        <div class="budget-track"><div class="budget-fill" style="width:6%"></div></div>
+        <span class="budget-value">300-600元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:15px; padding-top:15px; border-top:2px dashed var(--dark);">
+        <span class="budget-label" style="font-weight:bold;">💵 小计（不含大交通）</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red);">8100-9200元</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px;">
+        <span class="budget-label">✈️ 大交通</span>
+        <div class="budget-track"><div class="budget-fill" style="width:55%; background:linear-gradient(90deg,#90CAF9,#64B5F6);"></div></div>
+        <span class="budget-value">1200-2000元/人</span>
+      </div>
+      <div class="budget-bar" style="margin-top:5px; padding-top:12px; border-top:3px double var(--dark);">
+        <span class="budget-label" style="font-size:15px; font-weight:bold;">🎯 预估总计</span>
+        <div class="budget-track"><div class="budget-fill" style="width:100%; background:linear-gradient(90deg,#E53935,#FF8A65,#FFD54F,#81C784);"></div></div>
+        <span class="budget-value" style="color:var(--red); font-size:18px;">10500-13200元</span>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:18px;">
+      <button onclick="document.getElementById('budgetModal').style.display='flex'" style="font-family:'ZCOOL KuaiLe',cursive; font-size:16px; padding:10px 28px; border-radius:30px; border:3px solid var(--dark); background:var(--warm); color:var(--dark); cursor:pointer; box-shadow:3px 3px 0px var(--dark); transition:all 0.15s;" onmouseover="this.style.background='#FFD54F'; this.style.transform='translate(-1px,-1px)'; this.style.boxShadow='4px 4px 0px var(--dark)';" onmouseout="this.style.background='#FFD54F'; this.style.transform='translate(0,0)'; this.style.boxShadow='3px 3px 0px var(--dark)';">📋 点击查看费用明细</button>
+    </div>
+  </div>
+
+  <!-- 弹窗 -->
+  <div id="budgetModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.55); align-items:center; justify-content:center; padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:white; border-radius:20px; border:4px solid var(--dark); padding:28px 30px; max-width:680px; width:100%; max-height:85vh; overflow-y:auto; box-shadow:6px 6px 0px var(--dark); position:relative;">
+      <button onclick="document.getElementById('budgetModal').style.display='none'" style="position:absolute; top:12px; right:16px; font-size:22px; background:none; border:none; cursor:pointer; color:var(--dark); line-height:1;">✕</button>
+      <h3 style="font-family:'ZCOOL KuaiLe',cursive; color:var(--dark); margin-bottom:16px; font-size:20px; padding-right:40px;">📋 费用明细（2人，7天）</h3>
+      <table style="width:100%; font-size:13px; border-collapse:collapse; color:var(--dark);">
+        <tr style="background:#FFF8E1; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 D1 乌鲁木齐酒店（天山区，含早）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~500元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 D2 乌鲁木齐酒店</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~500元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 D3 乌鲁木齐酒店</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~500元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 D4 巴音布鲁克草原宾馆/蒙古包</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~600-800元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 D5 那拉提景区附近酒店</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~500-700元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 D6 乌鲁木齐酒店</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~500-700元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🏨 住宿小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">2800-4000元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D1 抵达当晚（大巴扎烤肉+小吃）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D2 天池往返（景区附近+返回）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~250元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D3 吐鲁番（火焰山+葡萄沟+午餐）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D4 独库公路沿途（午餐+巴音布鲁克晚餐）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D5 那拉提+返程（路上干粮+晚餐）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D6 乌鲁木齐（红山公园+美食街）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 D7 返程早餐+路上零食</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~150元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🍜 餐饮小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~2000元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚗 乌鲁木齐市区交通（打车/公交，D1/D2/D3/D6）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~300元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚗 D4-D5 独库公路+那拉提段（租车/包车分摊油费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~800元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚄 D2/D3 乌鲁木齐→天池/吐鲁番（城际交通）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~400元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🚕 交通小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~1500元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 天山天池（成人75，儿童38）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">188元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 火焰山（成人50，儿童25）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">125元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 交河故城（成人60，儿童30）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">150元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 葡萄沟（成人45，儿童23）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">113元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 巴音布鲁克（成人80，儿童40）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">200元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 那拉提（成人95，儿童48）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">238元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 红山公园（免费）+ 博物馆（免费）+ 大巴扎（免费）</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">0元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:5px 6px; border-bottom:1px solid #E0E0E0;">🎫 门票小计</td>
+          <td style="text-align:right; border-bottom:1px solid #E0E0E0;">~1014元</td>
+        </tr>
+        <tr>
+          <td style="padding:5px 6px;">🛒 购物+特产（干果、馕、葡萄干等）</td>
+          <td style="text-align:right; font-weight:bold;">300-600元</td>
+        </tr>
+        <tr style="background:#E8F5E9; font-weight:bold;">
+          <td style="padding:7px 6px;">🧮 小计（不含往返大交通）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">8100-9200元</td>
+        </tr>
+        <tr style="background:#FFF3E0; font-weight:bold; border-top:2px solid var(--dark);">
+          <td style="padding:7px 6px;">✈️ 往返大交通（飞机，深圳✈️乌鲁木齐）</td>
+          <td style="text-align:right; color:var(--red); font-size:15px;">1200-2000元/人</td>
+        </tr>
+        <tr style="background:linear-gradient(135deg,#E53935,#FF8A65); color:white; font-weight:bold;">
+          <td style="padding:9px 6px; font-size:15px;">🎯 预估总计（2人，7天）</td>
+          <td style="text-align:right; font-size:19px;">10500-13200元</td>
+        </tr>
+      </table>
+      <div class="tip-box" style="margin-top:12px;">
+        <span class="tip-icon">👶</span>
+        <span><b>儿童票价（8岁）：</b>各景点按6-12岁儿童票半价计算（成人全价×0.5）。新疆大部分景区对6周岁以下或身高1.2米以下免费，8岁儿童需购儿童票。</span>
+      </div>
+      <div class="tip-box" style="margin-top:8px;">
+        <span class="tip-icon">📊</span>
+        <span><b>行程覆盖：</b>本预算严格对应7日行程（D1深圳落地乌鲁木齐→D2天山天池→D3吐鲁番→D4独库公路→D5那拉提→D6乌鲁木齐→D7返程），新疆地域辽阔，交通成本高于内地，独库公路段油费/包车费用较高，建议多人拼车分摊。</span>
+      </div>
+    </div>
+  </div>
+
+</主>
+
+<!-- ====== 底部 ====== -->
+<footer class="poster-footer">
+  <h2>🐎 西域之旅 · 等你来 ❤️</h2>
+  <p>#新疆旅行 #乌鲁木齐 #天山天池 #火焰山 #独库公路 #那拉提草原 #亲子游 #攻略</p>
+  <div class="footer-flowers">🌸</div>
+  <div class="footer-flowers">🌼</div>
+  <div class="footer-flowers">🌺</div>
+  <div class="footer-flowers">🌻</div>
+  <div class="footer-flowers">🌷</div>
+  <div class="footer-flowers">🌸</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+document.querySelectorAll('.carousel-wrap .swiper').forEach(function(el) {
+  new Swiper(el, {
+    loop: true,
+    pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
+    navigation: { nextEl: el.querySelector('.swiper-button-next'), prevEl: el.querySelector('.swiper-button-prev') },
+    autoplay: { delay: 3500, disableOnInteraction: false },
+  });
+});
+</script>
+
+</body>
+</html>
